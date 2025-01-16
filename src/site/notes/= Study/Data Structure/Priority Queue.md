@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/study/data-structure/priority-queue/","created":"2023-12-04T23:16:28.000+09:00","updated":"2023-12-04T23:16:28.000+09:00"}
+{"dg-publish":true,"permalink":"/= Study/Data Structure/Priority Queue/","created":"2023-12-04T23:16:28.000+09:00","updated":"2023-12-04T23:16:28.000+09:00"}
 ---
 
 # Priorty Queue

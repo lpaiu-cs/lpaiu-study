@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/study/data-structure/data-structure-implementation/","created":"2023-12-04T23:01:21.000+09:00","updated":"2023-12-04T23:01:21.000+09:00"}
+{"dg-publish":true,"permalink":"/= Study/Data Structure/Data Structure Implementation/","created":"2023-12-04T23:01:21.000+09:00","updated":"2023-12-04T23:01:21.000+09:00"}
 ---
 
 # Implementation

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/study/algorithm/machine-learning-algorithm/","created":"2024-04-22T02:22:52.000+09:00","updated":"2025-01-14T15:33:43.000+09:00"}
+{"dg-publish":true,"permalink":"/= Study/Algorithm/Machine Learning Algorithm_/","created":"2024-04-22T02:22:52.000+09:00","updated":"2025-01-14T15:33:43.000+09:00"}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/study/artificial-intelligence/agent-program/","created":"2024-02-09T21:31:38.000+09:00","updated":"2025-01-14T15:33:44.000+09:00"}
+{"dg-publish":true,"permalink":"/= Study/Artificial Intelligence/Agent Program/","created":"2024-02-09T21:31:38.000+09:00","updated":"2025-01-14T15:33:44.000+09:00"}
 ---
 
 

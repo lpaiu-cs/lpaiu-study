@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/study/logic-design/state-table-and-diagram/","created":"2023-12-04T22:55:46.000+09:00","updated":"2025-01-14T15:33:45.000+09:00"}
+{"dg-publish":true,"permalink":"/= Study/Logic Design/State Table and Diagram/","created":"2023-12-04T22:55:46.000+09:00","updated":"2025-01-14T15:33:45.000+09:00"}
 ---
 
 

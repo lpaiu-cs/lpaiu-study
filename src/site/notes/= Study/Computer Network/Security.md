@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/study/computer-network/security/","created":"2023-12-17T23:52:56.000+09:00","updated":"2025-01-14T15:33:44.000+09:00"}
+{"dg-publish":true,"permalink":"/= Study/Computer Network/Security/","created":"2023-12-17T23:52:56.000+09:00","updated":"2025-01-14T15:33:44.000+09:00"}
 ---
 
 

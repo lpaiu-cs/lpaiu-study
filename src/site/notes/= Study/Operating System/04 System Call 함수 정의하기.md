@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/study/operating-system/04-system-call/","created":"2024-11-13T23:07:58.000+09:00","updated":"2025-01-14T15:33:46.000+09:00"}
+{"dg-publish":true,"permalink":"/= Study/Operating System/04 System Call 함수 정의하기/","created":"2024-11-13T23:07:58.000+09:00","updated":"2025-01-14T15:33:46.000+09:00"}
 ---
 
 시스템 콜을 통해서만 커널에 접근할 수 있다.

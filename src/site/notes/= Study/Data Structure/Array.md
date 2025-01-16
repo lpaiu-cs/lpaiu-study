@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/study/data-structure/array/","created":"2023-12-04T23:01:31.000+09:00","updated":"2023-12-04T23:01:31.000+09:00"}
+{"dg-publish":true,"permalink":"/= Study/Data Structure/Array/","created":"2023-12-04T23:01:31.000+09:00","updated":"2023-12-04T23:01:31.000+09:00"}
 ---
 
 # Array

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/study/logic-design/latch/","created":"2023-12-18T02:49:10.000+09:00","updated":"2025-01-14T15:33:45.000+09:00"}
+{"dg-publish":true,"permalink":"/= Study/Logic Design/Latch/","created":"2023-12-18T02:49:10.000+09:00","updated":"2025-01-14T15:33:45.000+09:00"}
 ---
 
 # Latch

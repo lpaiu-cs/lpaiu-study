@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/study/data-structure/stack/","created":"2023-12-04T23:02:08.000+09:00","updated":"2023-12-04T23:02:08.000+09:00"}
+{"dg-publish":true,"permalink":"/= Study/Data Structure/Stack/","created":"2023-12-04T23:02:08.000+09:00","updated":"2023-12-04T23:02:08.000+09:00"}
 ---
 
 # Stack

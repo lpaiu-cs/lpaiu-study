@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/study/python/library-and-module/","created":"2024-01-04T20:03:40.000+09:00","updated":"2025-01-14T15:33:46.000+09:00"}
+{"dg-publish":true,"permalink":"/= Study/Python/library and module_/","created":"2024-01-04T20:03:40.000+09:00","updated":"2025-01-14T15:33:46.000+09:00"}
 ---
 
 라이브러리란 모듈의 집합이다. 모듈이란 하나의 파이썬 파일(.py 파일)을 의미한다. 즉 파이썬 코드 묶음이며, 여기에는 특정한 함수나 클래스 등이 정의되어 있을 수 있다.

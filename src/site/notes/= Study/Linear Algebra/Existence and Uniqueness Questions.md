@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/study/linear-algebra/existence-and-uniqueness-questions/","created":"2024-01-11T11:41:22.000+09:00","updated":"2025-01-14T15:33:45.000+09:00"}
+{"dg-publish":true,"permalink":"/= Study/Linear Algebra/Existence and Uniqueness Questions/","created":"2024-01-11T11:41:22.000+09:00","updated":"2025-01-14T15:33:45.000+09:00"}
 ---
 
 # 존재성과 유일성 문제

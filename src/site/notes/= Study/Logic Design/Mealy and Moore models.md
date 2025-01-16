@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/study/logic-design/mealy-and-moore-models/","created":"2023-12-18T03:21:06.000+09:00","updated":"2025-01-14T15:33:45.000+09:00"}
+{"dg-publish":true,"permalink":"/= Study/Logic Design/Mealy and Moore models/","created":"2023-12-18T03:21:06.000+09:00","updated":"2025-01-14T15:33:45.000+09:00"}
 ---
 
 

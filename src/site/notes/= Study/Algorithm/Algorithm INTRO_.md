@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/= Study/Algorithm/Algorithm INTRO_/","created":"2023-12-07T04:25:04.000+09:00","updated":"2025-01-14T15:33:43.000+09:00"}
+{"dg-publish":true,"permalink":"/study/algorithm/algorithm-intro/","created":"2023-12-07T04:25:04.000+09:00","updated":"2025-01-14T15:33:43.000+09:00"}
 ---
 
 >**<자료구조와 알고리즘간의 관계>**

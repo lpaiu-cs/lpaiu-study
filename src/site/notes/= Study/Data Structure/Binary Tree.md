@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/= Study/Data Structure/Binary Tree/","created":"2023-12-04T23:02:34.000+09:00","updated":"2023-12-04T23:02:34.000+09:00"}
+{"dg-publish":true,"permalink":"/study/data-structure/binary-tree/","created":"2023-12-04T23:02:34.000+09:00","updated":"2023-12-04T23:02:34.000+09:00"}
 ---
 
 # Tree

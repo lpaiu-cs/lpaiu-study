@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/= Study/Data Structure/Graph/","created":"2023-12-04T23:02:30.000+09:00","updated":"2023-12-04T23:02:30.000+09:00"}
+{"dg-publish":true,"permalink":"/study/data-structure/graph/","created":"2023-12-04T23:02:30.000+09:00","updated":"2023-12-04T23:02:30.000+09:00"}
 ---
 
 # Graph

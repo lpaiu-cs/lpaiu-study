@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/= Study/Algorithm/Heap Sort/","created":"2023-12-04T23:03:52.000+09:00","updated":"2025-01-14T15:33:43.000+09:00"}
+{"dg-publish":true,"permalink":"/study/algorithm/heap-sort/","created":"2023-12-04T23:03:52.000+09:00","updated":"2025-01-14T15:33:43.000+09:00"}
 ---
 
 Max [[= Study/Data Structure/Heap\|Heap]] 자료구조를 이용하는 정렬로,

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/= Study/Algorithm/Dijkstra Algorithm/","created":"2024-02-04T18:21:04.000+09:00","updated":"2025-01-14T15:33:43.000+09:00"}
+{"dg-publish":true,"permalink":"/study/algorithm/dijkstra-algorithm/","created":"2024-02-04T18:21:04.000+09:00","updated":"2025-01-14T15:33:43.000+09:00"}
 ---
 
 ### Shortest Path 문제

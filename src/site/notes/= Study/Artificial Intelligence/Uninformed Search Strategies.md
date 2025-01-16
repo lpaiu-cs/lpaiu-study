@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/= Study/Artificial Intelligence/Uninformed Search Strategies/","created":"2024-04-18T22:00:24.000+09:00","updated":"2025-01-14T15:33:44.000+09:00"}
+{"dg-publish":true,"permalink":"/study/artificial-intelligence/uninformed-search-strategies/","created":"2024-04-18T22:00:24.000+09:00","updated":"2025-01-14T15:33:44.000+09:00"}
 ---
 
 

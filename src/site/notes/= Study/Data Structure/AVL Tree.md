@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/= Study/Data Structure/AVL Tree/","created":"2024-02-06T00:33:06.000+09:00","updated":"2024-02-06T00:33:06.000+09:00"}
+{"dg-publish":true,"permalink":"/study/data-structure/avl-tree/","created":"2024-02-06T00:33:06.000+09:00","updated":"2024-02-06T00:33:06.000+09:00"}
 ---
 
 [[= Study/Data Structure/Binary Search Tree\|Binary Search Tree]]에는 균형이 깨질 수 있다는 치명적인 단점이 있었다.

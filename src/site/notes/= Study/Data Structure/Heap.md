@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/= Study/Data Structure/Heap/","created":"2023-12-04T23:16:31.000+09:00","updated":"2023-12-04T23:16:31.000+09:00"}
+{"dg-publish":true,"permalink":"/study/data-structure/heap/","created":"2023-12-04T23:16:31.000+09:00","updated":"2023-12-04T23:16:31.000+09:00"}
 ---
 
 # Heap

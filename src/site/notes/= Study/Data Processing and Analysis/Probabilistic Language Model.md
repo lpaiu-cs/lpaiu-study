@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/= Study/Data Processing and Analysis/Probabilistic Language Model/","created":"2023-12-07T04:24:00.000+09:00","updated":"2025-01-14T15:33:44.000+09:00"}
+{"dg-publish":true,"permalink":"/study/data-processing-and-analysis/probabilistic-language-model/","created":"2023-12-07T04:24:00.000+09:00","updated":"2025-01-14T15:33:44.000+09:00"}
 ---
 
 # Probabilistic Language Model

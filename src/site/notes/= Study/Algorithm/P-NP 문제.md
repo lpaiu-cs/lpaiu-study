@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/= Study/Algorithm/P-NP 문제/","created":"2023-12-07T20:32:40.000+09:00","updated":"2025-01-14T15:33:43.000+09:00"}
+{"dg-publish":true,"permalink":"/study/algorithm/p-np/","created":"2023-12-07T20:32:40.000+09:00","updated":"2025-01-14T15:33:43.000+09:00"}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/= Study/Data Structure/Linked List/","created":"2023-12-04T23:01:35.000+09:00","updated":"2023-12-04T23:01:35.000+09:00"}
+{"dg-publish":true,"permalink":"/study/data-structure/linked-list/","created":"2023-12-04T23:01:35.000+09:00","updated":"2023-12-04T23:01:35.000+09:00"}
 ---
 
 # Linked List

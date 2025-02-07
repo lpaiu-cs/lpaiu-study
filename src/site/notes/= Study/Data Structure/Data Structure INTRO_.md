@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/= Study/Data Structure/Data Structure INTRO_/","created":"2023-12-07T02:56:47.000+09:00","updated":"2023-12-07T02:56:47.000+09:00"}
+{"dg-publish":true,"permalink":"/study/data-structure/data-structure-intro/","created":"2023-12-07T02:56:47.000+09:00","updated":"2023-12-07T02:56:47.000+09:00"}
 ---
 
 # 자료구조

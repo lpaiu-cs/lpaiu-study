@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/= Study/Algorithm/Kruskal Algorithm/","created":"2024-02-04T13:01:28.000+09:00","updated":"2025-01-14T15:33:43.000+09:00"}
+{"dg-publish":true,"permalink":"/study/algorithm/kruskal-algorithm/","created":"2024-02-04T13:01:28.000+09:00","updated":"2025-01-14T15:33:43.000+09:00"}
 ---
 
 [[= Study/Algorithm/Prim Algorithm\|Prim Algorithm]]을 이용해 Minimum Spanning Tree를 만들었다. 하지만 이 문제를 해결하는 방법이 이것뿐은 아니다. 프림 알고리즘에서 정점에 집중했듯이, 이번엔 간선에 집중할 수도 있다.

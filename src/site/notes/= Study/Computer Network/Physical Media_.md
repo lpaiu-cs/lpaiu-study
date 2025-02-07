@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/= Study/Computer Network/Physical Media_/","created":"2023-12-19T00:46:32.000+09:00","updated":"2025-01-14T15:33:44.000+09:00"}
+{"dg-publish":true,"permalink":"/study/computer-network/physical-media/","created":"2023-12-19T00:46:32.000+09:00","updated":"2025-01-14T15:33:44.000+09:00"}
 ---
 
 1.2.2 

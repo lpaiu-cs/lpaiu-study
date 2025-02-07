@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/= Study/Python/class/","created":"2024-01-05T12:51:42.000+09:00","updated":"2025-01-14T15:33:46.000+09:00"}
+{"dg-publish":true,"permalink":"/study/python/class/","created":"2024-01-05T12:51:42.000+09:00","updated":"2025-01-14T15:33:46.000+09:00"}
 ---
 
 기본적으로 내장된 클래스class를 우린 **자료형datatype**이라 부른다.

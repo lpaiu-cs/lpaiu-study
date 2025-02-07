@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/= Study/Logic Design/Three-state gate/","created":"2023-12-18T02:43:22.000+09:00","updated":"2025-01-14T15:33:45.000+09:00"}
+{"dg-publish":true,"permalink":"/study/logic-design/three-state-gate/","created":"2023-12-18T02:43:22.000+09:00","updated":"2025-01-14T15:33:45.000+09:00"}
 ---
 
 # Three-state gate

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/= Study/Data Processing and Analysis/Text Classification/","created":"2023-12-19T19:11:46.000+09:00","updated":"2025-01-14T15:33:44.000+09:00"}
+{"dg-publish":true,"permalink":"/study/data-processing-and-analysis/text-classification/","created":"2023-12-19T19:11:46.000+09:00","updated":"2025-01-14T15:33:44.000+09:00"}
 ---
 
 # Text Classification

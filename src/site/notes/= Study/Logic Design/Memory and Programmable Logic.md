@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/= Study/Logic Design/Memory and Programmable Logic/","created":"2023-12-18T20:52:30.000+09:00","updated":"2025-01-14T15:33:45.000+09:00"}
+{"dg-publish":true,"permalink":"/study/logic-design/memory-and-programmable-logic/","created":"2023-12-18T20:52:30.000+09:00","updated":"2025-01-14T15:33:45.000+09:00"}
 ---
 
 

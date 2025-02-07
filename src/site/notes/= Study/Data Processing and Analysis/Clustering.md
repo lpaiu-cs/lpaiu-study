@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/= Study/Data Processing and Analysis/Clustering/","created":"2023-12-19T15:35:12.000+09:00","updated":"2025-01-14T15:33:44.000+09:00"}
+{"dg-publish":true,"permalink":"/study/data-processing-and-analysis/clustering/","created":"2023-12-19T15:35:12.000+09:00","updated":"2025-01-14T15:33:44.000+09:00"}
 ---
 
 

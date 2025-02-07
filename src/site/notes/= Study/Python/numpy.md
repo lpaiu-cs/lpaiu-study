@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/= Study/Python/numpy/","created":"2024-01-04T20:03:34.000+09:00","updated":"2025-01-14T15:33:46.000+09:00"}
+{"dg-publish":true,"permalink":"/study/python/numpy/","created":"2024-01-04T20:03:34.000+09:00","updated":"2025-01-14T15:33:46.000+09:00"}
 ---
 
 numpy는 [[library and module.\|외부 라이브러리]]이다.

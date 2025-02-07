@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/= Study/Data Structure/Hash Table/","created":"2023-12-04T23:01:45.000+09:00","updated":"2023-12-04T23:01:45.000+09:00"}
+{"dg-publish":true,"permalink":"/study/data-structure/hash-table/","created":"2023-12-04T23:01:45.000+09:00","updated":"2023-12-04T23:01:45.000+09:00"}
 ---
 
 # Hash Table

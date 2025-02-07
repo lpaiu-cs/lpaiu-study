@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/= Study/Logic Design/Flip-Flop/","created":"2023-12-04T22:55:18.000+09:00","updated":"2025-01-14T15:33:45.000+09:00"}
+{"dg-publish":true,"permalink":"/study/logic-design/flip-flop/","created":"2023-12-04T22:55:18.000+09:00","updated":"2025-01-14T15:33:45.000+09:00"}
 ---
 
 # Flip-Flop

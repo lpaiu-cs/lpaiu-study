@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/= Study/Computer Network/L4-Transport Layer_/","created":"2023-12-14T17:07:14.000+09:00","updated":"2025-01-14T15:33:44.000+09:00"}
+{"dg-publish":true,"permalink":"/study/computer-network/l4-transport-layer/","created":"2023-12-14T17:07:14.000+09:00","updated":"2025-01-14T15:33:44.000+09:00"}
 ---
 
 

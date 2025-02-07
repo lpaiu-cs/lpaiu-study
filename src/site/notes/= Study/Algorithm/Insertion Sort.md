@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/= Study/Algorithm/Insertion Sort/","created":"2023-12-04T23:03:46.000+09:00","updated":"2025-01-14T15:33:43.000+09:00"}
+{"dg-publish":true,"permalink":"/study/algorithm/insertion-sort/","created":"2023-12-04T23:03:46.000+09:00","updated":"2025-01-14T15:33:43.000+09:00"}
 ---
 
 i번 요소를 앞 요소들과 비교하여(비교시점에 앞 요소들은 정렬되어 있음) 적절한 자리에 넣는 행위를 *for i in range(1, n)* 으로 수행한다.

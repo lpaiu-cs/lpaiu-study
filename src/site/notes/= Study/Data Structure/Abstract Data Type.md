@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/= Study/Data Structure/Abstract Data Type/","created":"2023-12-04T23:01:55.000+09:00","updated":"2023-12-04T23:01:55.000+09:00"}
+{"dg-publish":true,"permalink":"/study/data-structure/abstract-data-type/","created":"2023-12-04T23:01:55.000+09:00","updated":"2023-12-04T23:01:55.000+09:00"}
 ---
 
 # ADT

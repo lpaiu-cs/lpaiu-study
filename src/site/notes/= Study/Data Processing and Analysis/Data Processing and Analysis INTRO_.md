@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/= Study/Data Processing and Analysis/Data Processing and Analysis INTRO_/","created":"2023-12-26T19:47:04.000+09:00","updated":"2025-01-14T15:33:44.000+09:00"}
+{"dg-publish":true,"permalink":"/study/data-processing-and-analysis/data-processing-and-analysis-intro/","created":"2023-12-26T19:47:04.000+09:00","updated":"2025-01-14T15:33:44.000+09:00"}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/= Study/Data Structure/Queue/","created":"2023-12-04T23:02:26.000+09:00","updated":"2023-12-04T23:02:26.000+09:00"}
+{"dg-publish":true,"permalink":"/study/data-structure/queue/","created":"2023-12-04T23:02:26.000+09:00","updated":"2023-12-04T23:02:26.000+09:00"}
 ---
 
 # Queue

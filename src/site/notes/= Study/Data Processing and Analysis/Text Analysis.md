@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/= Study/Data Processing and Analysis/Text Analysis/","created":"2023-12-28T19:01:50.000+09:00","updated":"2025-01-14T15:33:44.000+09:00"}
+{"dg-publish":true,"permalink":"/study/data-processing-and-analysis/text-analysis/","created":"2023-12-28T19:01:50.000+09:00","updated":"2025-01-14T15:33:44.000+09:00"}
 ---
 
 # Text Analysis

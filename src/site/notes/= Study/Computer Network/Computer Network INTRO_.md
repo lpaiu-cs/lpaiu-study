@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/= Study/Computer Network/Computer Network INTRO_/","created":"2023-12-14T17:34:58.000+09:00","updated":"2025-01-14T15:33:44.000+09:00"}
+{"dg-publish":true,"permalink":"/study/computer-network/computer-network-intro/","created":"2023-12-14T17:34:58.000+09:00","updated":"2025-01-14T15:33:44.000+09:00"}
 ---
 
 

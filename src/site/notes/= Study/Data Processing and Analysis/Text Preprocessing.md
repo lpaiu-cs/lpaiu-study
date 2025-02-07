@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/study/data-processing-and-analysis/text-preprocessing/","created":"2023-12-21T18:08:30.000+09:00","updated":"2025-01-14T15:33:44.000+09:00"}
+{"dg-publish":true,"permalink":"/= Study/Data Processing and Analysis/Text Preprocessing/","created":"2023-12-21T18:08:30.000+09:00","updated":"2025-01-14T15:33:44.000+09:00"}
 ---
 
 # Text Preprocessing

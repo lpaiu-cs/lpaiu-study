@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/study/artificial-intelligence-cs188/informed-search-strategies/","created":"2024-04-01T15:12:38.000+09:00","updated":"2025-01-14T15:33:44.000+09:00"}
+{"dg-publish":true,"permalink":"/= Study/Artificial Intelligence(cs188)/Informed Search Strategies/","created":"2024-04-01T15:12:38.000+09:00","updated":"2025-01-14T15:33:44.000+09:00"}
 ---
 
  

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/study/algorithm/topology-algorithm/","created":"2023-12-07T05:49:22.000+09:00","updated":"2025-01-14T15:33:43.000+09:00"}
+{"dg-publish":true,"permalink":"/= Study/Algorithm/Topology Algorithm_/","created":"2023-12-07T05:49:22.000+09:00","updated":"2025-01-14T15:33:43.000+09:00"}
 ---
 
 

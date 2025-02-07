@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/study/artificial-intelligence-cs188/solving-problems-by-searching/","created":"2024-02-15T14:04:24.000+09:00","updated":"2025-01-14T15:33:44.000+09:00"}
+{"dg-publish":true,"permalink":"/= Study/Artificial Intelligence(cs188)/Solving Problems by Searching/","created":"2024-02-15T14:04:24.000+09:00","updated":"2025-01-14T15:33:44.000+09:00"}
 ---
 
 

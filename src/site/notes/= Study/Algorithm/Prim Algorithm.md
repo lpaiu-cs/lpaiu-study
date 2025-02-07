@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/study/algorithm/prim-algorithm/","created":"2024-02-04T13:21:02.000+09:00","updated":"2025-01-14T15:33:43.000+09:00"}
+{"dg-publish":true,"permalink":"/= Study/Algorithm/Prim Algorithm/","created":"2024-02-04T13:21:02.000+09:00","updated":"2025-01-14T15:33:43.000+09:00"}
 ---
 
 Minimum Spanning Tree 문제를 해결하기 위한 알고리즘 중 하나.

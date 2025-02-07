@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/study/algorithm/search/","created":"2023-12-04T23:03:38.000+09:00","updated":"2025-01-14T15:33:43.000+09:00"}
+{"dg-publish":true,"permalink":"/= Study/Algorithm/Search/","created":"2023-12-04T23:03:38.000+09:00","updated":"2025-01-14T15:33:43.000+09:00"}
 ---
 
 - Sequential Search Algorithm

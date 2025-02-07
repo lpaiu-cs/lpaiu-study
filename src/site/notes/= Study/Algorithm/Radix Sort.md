@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/study/algorithm/radix-sort/","created":"2023-12-04T23:03:54.000+09:00","updated":"2025-01-14T15:33:43.000+09:00"}
+{"dg-publish":true,"permalink":"/= Study/Algorithm/Radix Sort/","created":"2023-12-04T23:03:54.000+09:00","updated":"2025-01-14T15:33:43.000+09:00"}
 ---
 
 **최댓값의 자릿수를 알고 있을때** 굉장히 빠르게 정렬할 수 있다.

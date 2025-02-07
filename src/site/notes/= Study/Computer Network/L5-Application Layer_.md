@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/study/computer-network/l5-application-layer/","created":"2023-12-14T17:07:08.000+09:00","updated":"2025-01-14T15:33:44.000+09:00"}
+{"dg-publish":true,"permalink":"/= Study/Computer Network/L5-Application Layer_/","created":"2023-12-14T17:07:08.000+09:00","updated":"2025-01-14T15:33:44.000+09:00"}
 ---
 
 network application: 일반적으로 우리가 사용하는 소프트웨어 응용  프로그램(프로세스)

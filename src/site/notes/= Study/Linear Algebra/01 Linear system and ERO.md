@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/study/linear-algebra/01-linear-system-and-ero/","created":"2024-01-11T01:46:14.000+09:00","updated":"2025-01-14T15:33:45.000+09:00"}
+{"dg-publish":true,"permalink":"/= Study/Linear Algebra/01 Linear system and ERO/","created":"2024-01-11T01:46:14.000+09:00","updated":"2025-01-14T15:33:45.000+09:00"}
 ---
 
 # 선형방정식계의 목적과 기본 개념

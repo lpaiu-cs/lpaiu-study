@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/study/python/23-2-algorithm-challenge-report/","created":"2023-12-26T19:47:48.000+09:00","updated":"2025-01-14T15:33:46.000+09:00"}
+{"dg-publish":true,"permalink":"/= Study/Python/23-2 Algorithm Challenge Report/","created":"2023-12-26T19:47:48.000+09:00","updated":"2025-01-14T15:33:46.000+09:00"}
 ---
 
 # 개요

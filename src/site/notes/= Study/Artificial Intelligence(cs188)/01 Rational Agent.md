@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/study/artificial-intelligence-cs188/01-rational-agent/","created":"2024-01-23T02:52:32.000+09:00","updated":"2025-01-14T15:33:44.000+09:00"}
+{"dg-publish":true,"permalink":"/= Study/Artificial Intelligence(cs188)/01 Rational Agent/","created":"2024-01-23T02:52:32.000+09:00","updated":"2025-01-14T15:33:44.000+09:00"}
 ---
 
   

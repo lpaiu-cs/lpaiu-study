@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/study/artificial-intelligence-cs188/00-ai-intro/","created":"2024-01-19T14:50:30.000+09:00","updated":"2025-02-07T18:03:46.000+09:00"}
+{"dg-publish":true,"permalink":"/= Study/Artificial Intelligence(cs188)/00 AI INTRO_/","created":"2024-01-19T14:50:30.000+09:00","updated":"2025-02-07T18:03:46.000+09:00"}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/hobby/chess//ductch-e6/","created":"2025-01-16T02:03:39.000+09:00","updated":"2025-01-17T00:24:29.000+09:00"}
+{"dg-publish":true,"permalink":"/Hobby/Chess/더치디펜스/(Ductch) e6 약점/","created":"2025-01-16T02:03:39.000+09:00","updated":"2025-01-17T00:24:29.000+09:00"}
 ---
 
 더치 레닌그라드에서 굉장히 자주 발생하는 e6약점이다.

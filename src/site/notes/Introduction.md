@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/introduction/","tags":["gardenEntry"],"created":"2024-11-15T04:40:52.000+09:00","updated":"2025-01-17T01:03:38.000+09:00"}
+{"dg-publish":true,"permalink":"/introduction/","tags":["gardenEntry"],"created":"2024-11-15T04:40:52.000+09:00","updated":"2025-02-08T00:58:30.213+09:00"}
 ---
 
 # Hey there!
@@ -18,12 +18,12 @@ As you navigate through my Second Brain, should you stumble upon any discrepanci
 # Here is my study
 아래 목록은 왼쪽 폴더 목록의 링크입니다. 클릭하면 이동합니다.
 
-- [[Data Structure INTRO.\|[Click!] Data Structure]]
-- [[Algorithm INTRO.\|[Click!] Algorithm]]
-- [[Computer Network INTRO.\|[Click!] Computer Network]]
-- [[= Study/Logic Design/Sequential Logic\|[Click!] Logic Design]]
-- [[Data Processing and Analysis INTRO.\|[Click!] Data Processing and Analysis]]
-- [[Linear Algebra INDEX.\|[Click!] Linear Algebra]]
+- [[= Study/Data Structure/Data Structure INTRO_\|(Click!) Data Structure]]
+- [[= Study/Algorithm/Algorithm INTRO_\|(Click!) Algorithm]]
+- [[= Study/Computer Network/Computer Network INTRO_\|(Click!) Computer Network]]
+- [[= Study/Logic Design/Sequential Logic\|(Click!) Logic Design]]
+- [[= Study/Data Processing and Analysis/Data Processing and Analysis INTRO_\|(Click!) Data Processing and Analysis]]
+- [[= Study/Linear Algebra/00 Linear Algebra INDEX_\|(Click!) Linear Algebra]]
 
 P.S.)
 - 파일 목록 최신순 정렬이 안되서 조금 뒤죽박죽인데, 해결방안을 찾고 있습니다

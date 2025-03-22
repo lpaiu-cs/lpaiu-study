@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/= Study/cs231n/01 Image Classification/","created":"2025-03-07T21:12:21.000+09:00","updated":"2025-03-17T00:57:42.513+09:00"}
+{"dg-publish":true,"permalink":"/= Study/cs231n/01 Image Classification/","created":"2025-03-07T21:12:21.464+09:00","updated":"2025-03-17T00:57:42.000+09:00"}
 ---
 
 Lecture 2: Summary
@@ -36,11 +36,67 @@ Lecture 2: Summary
 이러한 정보를 바탕으로 데이터를 학습시키기 위해 선형 분류기를 이용할 수 있다.
 
 # K-Nearest Neighbor Classifier
-예전에 알고리즘 수업에서 [[Machine Learning Algorithm.#k-NN에 대한 기하학적 접근\|k-NN]]에 대해 배웠었다. 이는 어떤 데이터의 속성을 k개의 가까운 이웃의 속성을 보고 다수에 속하는 속성으로 분류하는 비지도 학습 알고리즘이다.
+예전에 알고리즘 수업에서 [[= Study/Algorithm/Machine Learning Algorithm.#k-NN에 대한 기하학적 접근\|k-NN]]에 대해 배웠었다. 이는 어떤 데이터의 속성을 k개의 가까운 이웃의 속성을 보고 다수에 속하는 속성으로 분류하는 비지도 학습 알고리즘이다.
 
 그때 나왔던 토픽 중에 거리 척도에 대한 다음과 같은 내용이 있다.
 
-![[Machine Learning Algorithm.#k-NN에 대한 기하학적 접근\|Machine Learning Algorithm.#k-NN에 대한 기하학적 접근#거리 척도Distance Metric]]
+
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/study/algorithm/machine-learning-algorithm/#k-nn" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+
+
+# k-NN에 대한 기하학적 접근
+k-Nearest Neighbor 알고리즘은 유유상종 알고리즘이라 불리는 거리기반 분류 과제 수행 모델이다.
+말 그대로, k개의 **가까운 이웃**의 속성에 따라 분류한다.
+
+그런데, '가깝다'는 것은 거리 척도(distance metric)의 정의에 따라 달라진다.
+
+## 거리 척도Distance Metric
+
+
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/study/data-processing-and-analysis/text-classification/#euclidean-distance" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+
+
+#### Euclidean distance
+$d_{euc}(\vec{a}, \vec{b}) = \sqrt{\sum_{i=1}^{|V|} (a_i - b_i)^2}$
+
+</div></div>
+
+
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/study/data-processing-and-analysis/text-classification/#manhattan-distance" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+
+
+#### Manhattan distance
+$d_{mht}(\vec{a}, \vec{b}) = \sum_{i=1}^{|V|} |a_i - b_i|$
+
+</div></div>
+
+
+어떤 거리 척도(distance metric)을 선택할지는 매우 흥미로운 주제이다.
+왜냐하면 거리 척도에 따라 공간의 기하학적 구조 자체가 근본적으로 다르기 때문이다.
+예컨대 아래 그림에서 왼쪽의 사각형은 **L1 distance 관점에서는 원과 같다.** 중심으로부터의 거리가 모두 동일한 점들의 집합이기 때문이다. L2 distance에서는 동일한 집합의 표현이 우리가 아는 원일 것이다.
+
+![스크린샷 2025-03-07 오후 10.46.07.png](/img/user/z-Attached%20Files/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202025-03-07%20%EC%98%A4%ED%9B%84%2010.46.07.png)
+
+L1 distance는 좌표계의 영향을 크게 받는다. 예컨대 좌표계를 회전시킨다면, 모양이 변한다. 반면, L2 distance는 별다른 영향이 없다.
+
+## Voronoi Diagram
+평면 상에 여러 점들이 있을 때, 최근접 점이 동일한 영역을 묶어서 구획화한 것이다.
+즉, 가장 가까운 1개의 이웃(점)을 기준으로 결정을 내리는 것이므로, k = 1인 경우의 k-NN에서 쓰일 수 있다.
+
+## Delaunay Triangulation
+평면 상에 여러 점들이 있을 때, 이 점들을 연결하여 삼각분할을 만드는 다양한 방법이 있다.
+들로네 삼각분할은 이러한 분할 중에서 각각의 삼각형들이 **최대한 정삼각형에 가까운 꼴**인 것을 의미한다.
+
+**인접한 보로노이 셀에 속한 점들끼리 이으면**, 점들에 대한 삼각분할이 완성되는데 이는 들로네 삼각분할과 동치이다. (쌍대성duality)
+
+[[= Study/Algorithm/Topology Algorithm.\|Topology Algorithm.]]
+
+
+</div></div>
+
 
 따라서 특징 벡터의 각 요소들이 개별적 의미를 담고 있다면 L1 distance가 더 적합할 것이다. 반면, 각 요소의 실질적 의미가 모호한 경우에는 L2 distance가 더 적합할 수 있다.
 

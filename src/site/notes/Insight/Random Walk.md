@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/Insight/Random Walk/","created":"2025-03-17T00:29:51.012+09:00","updated":"2025-03-17T00:52:54.026+09:00"}
+{"dg-publish":true,"permalink":"/Insight/Random Walk/","created":"2025-03-17T00:29:51.000+09:00","updated":"2025-03-17T01:47:02.000+09:00"}
 ---
 
 1/2 확률 동전 토스를 하여 앞면이 나오면 +1,
@@ -19,6 +19,9 @@
 
 ![Pasted image 20250317004913.png](/img/user/z-Attached%20Files/Pasted%20image%2020250317004913.png)
 ![Pasted image 20250317004955.png](/img/user/z-Attached%20Files/Pasted%20image%2020250317004955.png)
+
+추가로 연속 홀 개수와 연속 짝 개수는 어떻게 나올까?
+그리고 예측이 확률과 기댓값을 이길 수 있을까?
 
 
 \*코드첨부

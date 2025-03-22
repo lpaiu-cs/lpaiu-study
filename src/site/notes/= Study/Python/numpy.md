@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/= Study/Python/numpy/","created":"2024-01-04T20:03:34.000+09:00","updated":"2025-01-14T15:33:46.000+09:00"}
 ---
 
-numpy는 [[library and module.\|외부 라이브러리]]이다.
+numpy는 [[= Study/Python/library and module.\|외부 라이브러리]]이다.
 
 따라서 사용하기 위해서는 다음 처럼 나타내야 한다.
 ```python

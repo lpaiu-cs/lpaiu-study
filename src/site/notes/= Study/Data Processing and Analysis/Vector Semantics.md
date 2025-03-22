@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/= Study/Data Processing and Analysis/Vector Semantics/","created":"2023-12-28T19:05:44.000+09:00","updated":"2025-01-14T15:33:44.000+09:00"}
+{"dg-publish":true,"permalink":"/= Study/Data Processing and Analysis/Vector Semantics/","created":"2023-12-28T19:05:44.000+09:00","updated":"2025-03-13T21:13:35.772+09:00"}
 ---
 
 
@@ -13,7 +13,7 @@
 
 어휘의 의미를 동의어 유의어 반의어 등을 통해 관계를 표현하는 것은 인간에게 친숙하고 편한데 반해 단어의 의미를 수학적으로 벡터 공간에 표현하는 것은 컴퓨터에게 친숙하며 NLP에 매우 용이하다. 이러한 표현 과정을 임베딩embedding이라고 부른다.
 
-그런데 **단어의 의미를 어떻게 임베딩**할 수 있을까?
+그런데 **단어의 의미를 어떻게 벡터 공간에 임베딩**할 수 있을까?
 ### Embedding Vector
 벡터 차원의 크기를 50, 100, 200, 300 등의 고정된 크기로 사용하는 dense-vector의 일종이다.
 단어의 의미를 직접적으로 임베딩하는 기법을 사용한다.

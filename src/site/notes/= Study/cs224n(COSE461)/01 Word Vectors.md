@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/= Study/cs224n(COSE461)/01 Word Vectors/","created":"2025-03-13T21:14:27.138+09:00","updated":"2025-03-17T18:34:49.958+09:00"}
+{"dg-publish":true,"permalink":"/= Study/cs224n(COSE461)/01 Word Vectors/","created":"2025-03-13T21:14:27.138+09:00","updated":"2025-03-22T23:47:18.403+09:00"}
 ---
 
 Lecture 1: Introduction and Word Vectors
@@ -68,55 +68,120 @@ Skip-gram은 Word2vec 기법 중 하나로, 주어진 중심단어(center word)�
 ![Pasted image 20250317165132.png](/img/user/z-Attached%20Files/Pasted%20image%2020250317165132.png)
 
 그라디언트 디센트 알고리즘을 통해 파라미터($\theta$)를 추정하는 골자는 아래와 같다.
-이때, $\theta$는 매트릭스임에 유의한다.
-$$\theta^{new} = \theta^{old} - \alpha \nabla_{\theta} J(\theta^{old}), \qquad \theta \in \mathbb R^{2 \times V \times D} $$
-$$\theta^{new}_j = \theta^{old}_j - \alpha \frac{\partial}{\partial \theta_j} J(\theta^{old}_j), \qquad \theta_j \in \mathbb R^{1}$$
+이때, $\theta$는 텐서임에 유의한다.
+$$\theta^{new} = \theta^{old} - \alpha \nabla_{\theta} J(\theta^{old}), \qquad \theta \in \mathbb R^{2 \times V \times D}$$
 그렇다면, $J(\theta)$는 어떻게 정의해야 할까?
 
 ### 정합한 문장과 맥락적 의미를 반영하기 위한 Likelihood Ftn
-일단 우리가 [[= My Brain/토막생각/글을 읽고 이해한다는 것\|원하는 글]]이 무엇인지에 대해 먼저 생각해야 한다. **우리는 단지 짧은 토막 문장만 만들어내는 모델을 원하는 것이 아니다. 일련의 corpus들이 뭉쳐서 유기적인 내용을 형성하기를 원한다.** 하지만 이를 위해 윈도우 사이즈를 지나치게 크게 한다면, 단어간 연관성이 형성되기 어렵다. 그래서 학습시키는 데이터 셋은 하나의 완성된 글의 형태를 통으로 학습하되 하나의 뭉텅이로 보는 윈도우 사이즈는 작게 만든다.
+일단 우리가 [[= My Brain/토막생각/글을 읽고 이해한다는 것\|원하는 글]]이 무엇인지에 대해 먼저 생각해야 한다. **우리는 단지 짧은 토막 문장만 만들어내는 모델을 원하는 것이 아니다. 문장이 뭉쳐 유기적인 글을 형성하기 원한다.** 하지만 이를 위해 윈도우 사이즈를 지나치게 크게 한다면, 단어간 연관성이 형성되기 어렵다. 그래서 학습시키는 데이터 셋은 하나의 완성된 글의 형태를 통으로 학습하되 하나의 뭉텅이로 보는 윈도우 사이즈는 작게 만든다.
 
 그래서 완성된 글이 서로 얼마나 유기적인지 그 정도를 나타내는 함수 $L(\theta)$를 다음처럼 정의한다.
 
 ![Screenshot 2025-03-17 at 5.52.11 PM.png](/img/user/z-Attached%20Files/Screenshot%202025-03-17%20at%205.52.11%20PM.png)
 
-여기서 단어간 유기성인 윈도우 사이즈 m은 5내외, (나는 이것이 문장의 완성과 관련된다고 생각한다.)
-형성된 맥락과 맥락간의 유기성인 T는 1M~1B이며, 10B이상인 글에도 적용된다.
-이를 통해 맥락을 학습하는 것일 테다. ( #Q 하지만 이게 최선일까?)
+여기서 **단어간의 유기성을 학습하기 위한** 윈도우 사이즈 $m$은 5내외, (아마 문장의 완성을 도울 것이다.)
+**문장간의 유기성을 학습하기 위한** 중심단어 위치 $t$의 범위 $T$는 1M~1B이며, 10B이상이기도 한다. (아마 내용이 연결되는 글의 사이즈를 의미하고, 이로써 맥락을 학습할 것이다.)
+( #Q 하지만 이게 최선일까?)
 
 ### Objective Ftn(= cost or loss ftn)
-우도Likelihood는 최대화 시키는게 우리의 목표이다.
-따라서 $J(\theta)$는 여기에 -를 붙여서 최소화시키는 함수로 바꾸고 그라디언트 디센트를 사용하면 될 것이다.
-하지만 곱연산은 미분을 통해 다루기 어렵기 때문에 로그를 씌워 합연산으로 만들고, T사이즈에 따라 무작정 값이 커지는 것을 막기 위해 평균으로 바꿔준다. 그 결과 아래와 같은 식이 된다.
+우리 목표는 우도Likelihood를 최대화 하는것이다.
+따라서 $J(\theta)$는 $L(\theta)$에 '-' 를 곱해 최소화 하는 함수로 바꾸고 그라디언트 디센트를 쓴다.
+
+이때 곱연산은 미분하기 어렵기 때문에 로그를 합성하고, $T$사이즈에 따라 무작정 값이 커지는 것을 막기 위해 평균으로 바꿔준다. 그 결과 아래와 같은 식이 된다.
 
 ![Screenshot 2025-03-17 at 6.05.25 PM.png](/img/user/z-Attached%20Files/Screenshot%202025-03-17%20at%206.05.25%20PM.png)
 
-### How to calculate Probability
-그래서 확률 $P(o|c)$는 어떻게 정의되는가?
-소프트맥스softmax 함수를 사용해서 확률 꼴로 만든다.
-분모에는 모든 단어 $V$ (Vocabulary)에 대해 중심단어와의 내적을 이용해 중심 단어(center word)와 다른 모든 단어와의 거리를 합한다.
-분자에는 주변부 단어(outside or context word)와의 내적을 둔다.
+### How to express Probability
+그래서 확률 $P(w_{t+j}|w_t)$는 어떻게 표현되는가?
 
-그러면 그 결과 중심단어로부터 다른 모든 단어들과의 거리 중 주변부 단어와 얼마나 가까운 상태인지를 확률로 계산할 수 있다. 마치 중심부 단어를 원점으로 다른 단어들을 흩뿌려둔 느낌이든다.
+중심 단어(center word)가 주어졌을 때, 다른 모든 단어들이 나오는 대신, 주변부 단어(outside or context word)가 등장할 확률이다.
+이때 등장 확률은 유사성이 결정하며, 유사성은 내적으로 구한다. $\implies u^T v$
+
+여기에 소프트맥스softmax 함수를 사용하면 중심단어로부터 다른 모든 단어들과의 거리 중, 주변부 단어와 얼마나 가까운 상태인지를 확률로 표현할 수 있다.
 
 ![Screenshot 2025-03-17 at 6.12.56 PM.png](/img/user/z-Attached%20Files/Screenshot%202025-03-17%20at%206.12.56%20PM.png)
 
+이처럼 어떤 $t$와 $j$에 대해 $P(o|c)$를 정의하였다.
 
 ### Calculating Gradient
-이게 제일 힘들었다. 옮기는 것은 추후에..
+우리는 다음과 같이 파라미터를 업데이트 하고 싶었다.
+$$\theta \leftarrow \theta - \alpha \nabla J(\theta), \qquad \theta \in \mathbb R^{2 \times V \times D}$$
+이제 우리는 $J(\theta)$를 정의했으므로, $\nabla J(\theta)$를 계산할 차례다.
+참고로 차원 때문에 이해하는게 꽤 힘들었다.
 
-계산상의 유의점: J는 스칼라이다.
-$\theta$는 2xVxD 매트릭스이다.
+---
+전제:
+$J \in \mathbb{R}$
+$\forall w \in Vocab$,  $v_w, u_w \in \mathbb{R}^{D}$
+$$\begin{align*}
+&U = [ u_{w_1} u_{w_2} ... u_{w_{|vocab|}}],\quad
+V = [ v_{w_1} v_{w_2} ... v_{w_{|vocab|}}] \quad
+\therefore U, V \in \mathbb{R}^{D\times Vocab} \\\\
+&\theta = [U \quad V] \quad \therefore \theta \in \mathbb{R}^{2\times D\times Vocab}
+\end{align*}$$
+---
 
-![Screenshot 2025-03-17 at 6.22.59 PM.png](/img/user/z-Attached%20Files/Screenshot%202025-03-17%20at%206.22.59%20PM.png)
+$$\begin{align*}
+\nabla J(\theta) &=\frac{∂J}{∂θ} \\\\
+&= \left[ \frac{∂J}{∂U} \quad \frac{∂J}{∂V} \right] \\\\
+&= \left[ \frac{∂J}{∂u_o} + \sum_{w \neq o}\frac{∂J}{∂u_w} \quad \frac{∂J}{∂v_c} + \sum_{w \neq c}\frac{∂J}{∂v_w} \right]
+\end{align*}$$
+참고로 느꼈겠지만 위 식의 + 는 브로드캐스팅 합처럼 생각하면 된다.
+엄밀하게 쓰자면 길어져서 이렇게 줄였다.
 
-$$\frac{∂J}{∂θ} = \frac{∂J}{∂v_c} + \sum_{x \neq c}\frac{∂J}{∂v_x} + \frac{∂J}{∂u_o} + \sum_{x \neq o}\frac{∂J}{∂u_x}$$
-여기서 +는 브로드캐스팅 합이다.
+그럼 우린 최종적으로 4가지 식에 대한 계산을 해야 한다.
+가장 먼저 아래 식을 이해하는 것이 중요하다. 그러고 나면 나머지는 어렵지 않다.
+$$\begin{align*}
+\frac{\partial}{\partial v_c} \log P(O = o \mid C = c)
+&= \frac{\partial}{\partial v_c} \log \frac{\exp(u_o^\top v_c)}{\sum_{w \in V} \exp(u_w^\top v_c)}
+\\\\
+&= \frac{\partial}{\partial v_c} \log \exp(u_o^\top v_c) - \frac{\partial}{\partial v_c} \log \left\{ \sum_{w \in V} \exp(u_w^\top v_c)\right\}
+\\\\
+&= u_o - \frac{\partial}{\partial v_c} \log Z \quad (Z\text{ 치환})
+\\\\
+&= u_o - \frac{\partial}{\partial Z} \log Z \frac{\partial Z}{\partial v_c} = u_o - \frac{1}{Z} \frac{\partial Z}{\partial v_c}
+\\\\
+&= u_o - \frac{1}{\sum_{w \in V} \exp(u_w^\top v_c)} \frac{\partial}{\partial v_c} \left \{\sum_{x \in V} \exp(u_x^\top v_c) \right\}
+\\\\
+&= u_o - \frac{1}{\sum_{w \in V} \exp(u_w^\top v_c)} \sum_{x \in V} u_x \exp(u_x^\top v_c)
+\\\\
+&= u_o - \sum_{x \in V} \frac{\exp(u_x^\top v_c)}{\sum_{w \in V} \exp(u_w^\top v_c)} u_x
+= u_o - \sum_{x \in V} P(x \mid c) u_x
+\\\\
+&= u_o - \mathbb{E}[u_X \mid c] \qquad (\text{단}, X \in V)
+\\
+&(observed - expected)
+\end{align*}$$
+이제 나머지 3개에 대해서도 연산하자
+$\text{Case 1) }x = o:$
+$$\begin{align*}
+\frac{\partial}{\partial u_x} \log P(O = o \mid C = c)
+&= \frac{\partial}{\partial u_o} \log \frac{\exp(u_o^\top v_c)}{\sum_{w \in V} \exp(u_w^\top v_c)} \\\\
+&= \frac{\partial}{\partial u_o} \log \exp(u_o^\top v_c) - \frac{\partial}{\partial u_o} \log \left\{ \sum_{w \in V} \exp(u_w^\top v_c)\right\} \\\\
+&= v_c - \frac{\partial}{\partial u_o} \log Z \quad (Z\text{ 치환}) \\\\
+&= v_c - \frac{\partial}{\partial Z} \log Z \frac{\partial Z}{\partial u_o} = v_c - \frac{1}{Z} \frac{\partial Z}{\partial u_o} \\\\
+&= v_c - \frac{1}{\sum_{w \in V} \exp(u_w^\top v_c)} \space v_c \exp(u_o^T v_c) \\\\
+&= v_c \left\{1 - \frac{\exp(u_o^T v_c)}{\sum_{w \in V} \exp(u_w^\top v_c)} \right\} \\\\
+&= v_c \left\{1 - P(o \mid c) \right\}
+\end{align*}$$
+$\text{cf})\quad \frac{\partial Z}{\partial u_o} = \frac{\partial}{\partial u_o} \sum_{w \in V, w \neq o} \exp(u_w^\top v_c) + \frac{\partial}{\partial u_o} \sum_{w \in V,  o} \exp(u_w^\top v_c) = v_c \exp(u_o^T v_c)$
 
-그런데 이때 $\frac{∂J}{∂v_c}$ 는 입력 벡터의 c 가중치 수정에 관여하고,
-$\sum_{x \neq c}\frac{∂J}{∂v_x}$는 0벡터이고,
-$\frac{∂J}{∂u_o}$는 $v_c(1 - P(o|c))$ 로, 출력 벡터의 o 수정에 관여하고,
-$\sum_{x \neq o}\frac{∂J}{∂u_x}$는 $-v_c(P(x|c))$로 출력벡터에서 o가 아닌 모든 단어들에 대한 수정에 관여한다.
+$\text{Case 2) }x \neq\ o$:
+$$\begin{align*}
+\frac{\partial}{\partial u_{x \neq o}} \log P(O = o \mid C = c)
+&= \frac{\partial}{\partial u_{x \neq o}} \log \frac{\exp(u_o^\top v_c)}{\sum_{w \in V} \exp(u_w^\top v_c)} \\\\
+&= \frac{\partial}{\partial u_{x \neq o}} \log \exp(u_o^\top v_c) - \frac{\partial}{\partial u_{x \neq o}} \log \left\{ \sum_{w \in V} \exp(u_w^\top v_c)\right\} \\\\
+&= 0 - \frac{\partial}{\partial u_{x \neq o}} \log Z \quad (Z\text{ 치환}) \\\\
+&= - \frac{\partial}{\partial Z} \log Z \frac{\partial Z}{\partial u_{x \neq o}} = - \frac{1}{Z} \frac{\partial Z}{\partial u_{x \neq o}} \\\\
+&= - \frac{1}{\sum_{w \in V} \exp(u_w^\top v_c)} \space \frac{\partial}{\partial u_{x\neq o}} \left \{ \sum_{w \in V, w \neq o} \exp(u_w^\top v_c) \right \} \\\\
+&= v_c \frac{\exp(u_x^T v_c)}{\sum_{w \in V} \exp(u_w^\top v_c)} \\\\
+&= v_c P(x \mid c)
+\end{align*}$$
+그리고 나머지 케이스인 $\sum_{x \neq c}\frac{∂J}{∂v_x}$는 0이고 계산은 생략한다.
 
-### Stochastic Gradient Descent
-![Screenshot 2025-03-17 at 6.34.27 PM.png](/img/user/z-Attached%20Files/Screenshot%202025-03-17%20at%206.34.27%20PM.png)
+계산이 길었는데, 이 값들이 J에 대한 그라디언트인건 아니므로 바로 써서는 안됨에 유의한다.
+
+###
+왜 두개의 벡터 UV를 쓰는지에 대한 설명추가
+
+![Screenshot 2025-03-20 at 6.43.35 PM.png](/img/user/z-Attached%20Files/Screenshot%202025-03-20%20at%206.43.35%20PM.png)

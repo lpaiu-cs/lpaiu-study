@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/= Study/cs224n(COSE461)/01 Word Vectors/","created":"2025-03-13T21:14:27.138+09:00","updated":"2025-03-22T23:47:18.403+09:00"}
+{"dg-publish":true,"permalink":"/= Study/cs224n(COSE461)/01 Word Vectors/","created":"2025-03-13T21:14:27.138+09:00","updated":"2025-04-02T19:33:28.838+09:00"}
 ---
 
 Lecture 1: Introduction and Word Vectors
@@ -7,6 +7,7 @@ Human language and word meaning
 Word2vec introduction
 Word2vec objective function gradients
 Optimization basics
+다음 강의: [[= Study/cs224n(COSE461)/02 GloVe\|02 GloVe]]
 
 ---
 
@@ -45,10 +46,8 @@ Optimization basics
 
 이제 문제는 각 벡터의 차원값, 즉 파라미터들을 어떻게 학습할 수 있는가? 이다.
 
-# Word2vec
+# Word2vec: skip-gram
 Word2vec은 단어를 벡터화시키기 위한 학습 프레임 워크이다.
-
-## Skip-gram
 Skip-gram은 Word2vec 기법 중 하나로, 주어진 중심단어(center word)로부터 주변부 단어(outside word, context word)를 예측하는 신경망 기반 학습 모델이다.
 이 모델은 맥락을 학습하기 위함이다. 비슷한 맥락을 가진 단어는 함께 등장할 것이라는 의미이다.
 
@@ -61,18 +60,18 @@ Skip-gram은 Word2vec 기법 중 하나로, 주어진 중심단어(center word)�
 그렇기 위해서는 파라미터를 최대한 정확하게 구해야 한다.
 이때 파라미터 학습은 [[= Study/Deep Learning/경사하강법Gradient Descent\|경사하강법Gradient Descent]]을 이용한다.
 
-### Gradient Descent
+## Gradient Descent
 경사하강법을 사용하기 위해서는 우린 예측이 어긋날 경우 비용이 커지게 되는 함수를 정의해줘야 한다.
 따라서 cost funtion $J(\theta)$를 정의한 후, 해당 함수의 최솟값을 추정해 나가면 된다.
 
 ![Pasted image 20250317165132.png](/img/user/z-Attached%20Files/Pasted%20image%2020250317165132.png)
 
 그라디언트 디센트 알고리즘을 통해 파라미터($\theta$)를 추정하는 골자는 아래와 같다.
-이때, $\theta$는 텐서임에 유의한다.
-$$\theta^{new} = \theta^{old} - \alpha \nabla_{\theta} J(\theta^{old}), \qquad \theta \in \mathbb R^{2 \times V \times D}$$
+이때, $\theta$는 존재하는 모든 파라미터를 가리킨다.
+$$\theta \leftarrow \theta - \alpha \nabla J(\theta)$$
 그렇다면, $J(\theta)$는 어떻게 정의해야 할까?
 
-### 정합한 문장과 맥락적 의미를 반영하기 위한 Likelihood Ftn
+## 정합한 문장과 맥락적 의미를 반영하기 위한 Likelihood Ftn
 일단 우리가 [[= My Brain/토막생각/글을 읽고 이해한다는 것\|원하는 글]]이 무엇인지에 대해 먼저 생각해야 한다. **우리는 단지 짧은 토막 문장만 만들어내는 모델을 원하는 것이 아니다. 문장이 뭉쳐 유기적인 글을 형성하기 원한다.** 하지만 이를 위해 윈도우 사이즈를 지나치게 크게 한다면, 단어간 연관성이 형성되기 어렵다. 그래서 학습시키는 데이터 셋은 하나의 완성된 글의 형태를 통으로 학습하되 하나의 뭉텅이로 보는 윈도우 사이즈는 작게 만든다.
 
 그래서 완성된 글이 서로 얼마나 유기적인지 그 정도를 나타내는 함수 $L(\theta)$를 다음처럼 정의한다.
@@ -83,7 +82,7 @@ $$\theta^{new} = \theta^{old} - \alpha \nabla_{\theta} J(\theta^{old}), \qquad \
 **문장간의 유기성을 학습하기 위한** 중심단어 위치 $t$의 범위 $T$는 1M~1B이며, 10B이상이기도 한다. (아마 내용이 연결되는 글의 사이즈를 의미하고, 이로써 맥락을 학습할 것이다.)
 ( #Q 하지만 이게 최선일까?)
 
-### Objective Ftn(= cost or loss ftn)
+## Objective Ftn(= cost or loss ftn)
 우리 목표는 우도Likelihood를 최대화 하는것이다.
 따라서 $J(\theta)$는 $L(\theta)$에 '-' 를 곱해 최소화 하는 함수로 바꾸고 그라디언트 디센트를 쓴다.
 
@@ -91,7 +90,7 @@ $$\theta^{new} = \theta^{old} - \alpha \nabla_{\theta} J(\theta^{old}), \qquad \
 
 ![Screenshot 2025-03-17 at 6.05.25 PM.png](/img/user/z-Attached%20Files/Screenshot%202025-03-17%20at%206.05.25%20PM.png)
 
-### How to express Probability
+## How to express Probability
 그래서 확률 $P(w_{t+j}|w_t)$는 어떻게 표현되는가?
 
 중심 단어(center word)가 주어졌을 때, 다른 모든 단어들이 나오는 대신, 주변부 단어(outside or context word)가 등장할 확률이다.
@@ -103,9 +102,9 @@ $$\theta^{new} = \theta^{old} - \alpha \nabla_{\theta} J(\theta^{old}), \qquad \
 
 이처럼 어떤 $t$와 $j$에 대해 $P(o|c)$를 정의하였다.
 
-### Calculating Gradient
+## Calculating Gradient
 우리는 다음과 같이 파라미터를 업데이트 하고 싶었다.
-$$\theta \leftarrow \theta - \alpha \nabla J(\theta), \qquad \theta \in \mathbb R^{2 \times V \times D}$$
+$$\theta^{new} = \theta^{old} - \alpha \nabla_{\theta} J(\theta^{old}), \qquad \theta \in \mathbb R^{2 \times D \times Vocab}$$
 이제 우리는 $J(\theta)$를 정의했으므로, $\nabla J(\theta)$를 계산할 차례다.
 참고로 차원 때문에 이해하는게 꽤 힘들었다.
 
@@ -120,17 +119,20 @@ V = [ v_{w_1} v_{w_2} ... v_{w_{|vocab|}}] \quad
 &\theta = [U \quad V] \quad \therefore \theta \in \mathbb{R}^{2\times D\times Vocab}
 \end{align*}$$
 ---
-
 $$\begin{align*}
 \nabla J(\theta) &=\frac{∂J}{∂θ} \\\\
 &= \left[ \frac{∂J}{∂U} \quad \frac{∂J}{∂V} \right] \\\\
 &= \left[ \frac{∂J}{∂u_o} + \sum_{w \neq o}\frac{∂J}{∂u_w} \quad \frac{∂J}{∂v_c} + \sum_{w \neq c}\frac{∂J}{∂v_w} \right]
 \end{align*}$$
-참고로 느꼈겠지만 위 식의 + 는 브로드캐스팅 합처럼 생각하면 된다.
-엄밀하게 쓰자면 길어져서 이렇게 줄였다.
+---
+
+참고로 위 식의 + 는 브로드캐스팅 합처럼 생각하면 된다.
+엄밀하게 쓰기엔 길어서 줄여썼다.
 
 그럼 우린 최종적으로 4가지 식에 대한 계산을 해야 한다.
 가장 먼저 아래 식을 이해하는 것이 중요하다. 그러고 나면 나머지는 어렵지 않다.
+
+---
 $$\begin{align*}
 \frac{\partial}{\partial v_c} \log P(O = o \mid C = c)
 &= \frac{\partial}{\partial v_c} \log \frac{\exp(u_o^\top v_c)}{\sum_{w \in V} \exp(u_w^\top v_c)}
@@ -174,14 +176,14 @@ $$\begin{align*}
 &= 0 - \frac{\partial}{\partial u_{x \neq o}} \log Z \quad (Z\text{ 치환}) \\\\
 &= - \frac{\partial}{\partial Z} \log Z \frac{\partial Z}{\partial u_{x \neq o}} = - \frac{1}{Z} \frac{\partial Z}{\partial u_{x \neq o}} \\\\
 &= - \frac{1}{\sum_{w \in V} \exp(u_w^\top v_c)} \space \frac{\partial}{\partial u_{x\neq o}} \left \{ \sum_{w \in V, w \neq o} \exp(u_w^\top v_c) \right \} \\\\
-&= v_c \frac{\exp(u_x^T v_c)}{\sum_{w \in V} \exp(u_w^\top v_c)} \\\\
-&= v_c P(x \mid c)
+&= - \frac{\exp(u_x^T v_c)}{\sum_{w \in V} \exp(u_w^\top v_c)} v_c \\\\
+&= - P(x \mid c) v_c
 \end{align*}$$
 그리고 나머지 케이스인 $\sum_{x \neq c}\frac{∂J}{∂v_x}$는 0이고 계산은 생략한다.
 
 계산이 길었는데, 이 값들이 J에 대한 그라디언트인건 아니므로 바로 써서는 안됨에 유의한다.
 
-###
+##
 왜 두개의 벡터 UV를 쓰는지에 대한 설명추가
 
 ![Screenshot 2025-03-20 at 6.43.35 PM.png](/img/user/z-Attached%20Files/Screenshot%202025-03-20%20at%206.43.35%20PM.png)

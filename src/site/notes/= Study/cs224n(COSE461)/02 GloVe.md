@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/= Study/cs224n(COSE461)/02 GloVe/","created":"2025-03-18T12:21:20.891+09:00","updated":"2025-04-02T19:35:00.911+09:00"}
+{"dg-publish":true,"permalink":"/= Study/cs224n(COSE461)/02 GloVe/","created":"2025-03-18T12:21:20.891+09:00","updated":"2025-04-04T00:36:20.745+09:00"}
 ---
 
 Lecture 2: Word Vectors, Word Senses, and Neural Network Classifiers
@@ -104,6 +104,7 @@ SVD를 사용하여 count-based의 약점인 고차원성을 해결.
 
 # GloVe
 Global Vectors for Word Representation
+cf. [[= Study/cs224n(COSE461)/GloVe 논문 리딩\|GloVe 논문 리딩]]
 
 COALS에서 착안한 count-based 방식의 일종으로, **동시 발생 확률의 비율**이 의미 구성 요소를 형성할 수 있다면, 그리고 벡터 공간에서 선형적인 것으로 만들 수 있다면, word2vec이나 COALS와 같은 결과를 얻을 수 있다.
 
@@ -162,7 +163,7 @@ ice와 steam 두 단어를 중심 단어로 두고 확률을 살폈을 때, 각�
 
 
 # Deep Learning Classification: NER
-Named Entity Recognition으로 단어에 클래스를 레이블로 지정하는 작업이다.
+NER은 Named Entity Recognition으로 단어에 클래스를 레이블로 지정하는 작업이다.
 
 예를들어, 아래 그림처럼 문장 내에서 '사람', '위치', '날짜' 로 단어들을 분류하는 것이다.
 ![Screenshot 2025-04-01 at 3.56.22 PM.png](/img/user/z-Attached%20Files/Screenshot%202025-04-01%20at%203.56.22%20PM.png)
@@ -197,7 +198,7 @@ the museums in **Paris** are amazing to see . -> 위치
 
 먼저, 파라미터 W 뿐만 아니라, 입력값인 word vectors $\mathbf x$ 또한 함께 학습한다.
 그 말은 $\mathbf x$가 one-hot vector $y$ 에서 중간 계층 벡터 공간으로 이동한다는 뜻이며, 그 결과 linear softmax classifier로 더 쉽게 분류할 수 있게 한다. 이러한 과정은 개념적으로 임베딩 벡터 $\mathbf x = \mathbf V\mathbf y$를 얻는 것이다. (그림에는 x = Le)
-
+    
 즉, $\mathbf x$는 히든레이어 계층으로 이동한 후 비선형 활성화 함수 $f$ 를 통과함으로써 비선형성을 얻는다
 
 ![Pasted image 20250402000447.png](/img/user/z-Attached%20Files/Pasted%20image%2020250402000447.png)

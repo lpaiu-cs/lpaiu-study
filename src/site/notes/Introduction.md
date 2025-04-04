@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/Introduction/","tags":["gardenEntry"],"created":"2024-11-15T04:40:52.000+09:00","updated":"2025-02-08T00:58:30.000+09:00"}
+{"dg-publish":true,"permalink":"/Introduction/","tags":["gardenEntry"],"created":"2024-11-15T04:40:52.000+09:00","updated":"2025-04-04T18:29:12.473+09:00"}
 ---
 
 # Hey there!
@@ -18,16 +18,16 @@ As you navigate through my Second Brain, should you stumble upon any discrepanci
 # Here is my study
 아래 목록은 왼쪽 폴더 목록의 링크입니다. 클릭하면 이동합니다.
 
-- [[Data Structure INTRO_\|(Click!) Data Structure]]
-- [[Algorithm INTRO_\|(Click!) Algorithm]]
-- [[Computer Network INTRO_\|(Click!) Computer Network]]
+- [[= Study/Data Structure/Data Structure INTRO.\|(Click!) Data Structure]]
+- [[= Study/Algorithm/Algorithm INTRO.\|(Click!) Algorithm]]
+- [[= Study/Computer Network/Computer Network INTRO.\|(Click!) Computer Network]]
 - [[= Study/Logic Design/Sequential Logic\|(Click!) Logic Design]]
-- [[Data Processing and Analysis INTRO_\|(Click!) Data Processing and Analysis]]
+- [[= Study/Data Processing and Analysis/Data Processing and Analysis INTRO.\|(Click!) Data Processing and Analysis]]
 - [[= Study/Linear Algebra/00 Linear Algebra INDEX_\|(Click!) Linear Algebra]]
 
 P.S.)
-- 파일 목록 최신순 정렬이 안되서 조금 뒤죽박죽인데, 해결방안을 찾고 있습니다
-- pc환경에 최적화되어있어서 모바일에선 일부 Latex문법이나 사진이 짤릴 수 있습니다
+- 파일 목록 최신순 정렬이 안되서 조금 뒤죽박죽인데, 해결방안을 찾고 있습니다.
+- pc환경에 최적화되어있어서 모바일에선 일부 Latex문법이나 사진이 짤릴 수 있습니다.
 
 
 # Timeline
@@ -46,7 +46,7 @@ Writing Start: *Data Processing and Analysis*
 Writing Start: *Computer Network*
 
 @ **2023-12-06**
-\>>> Publication on This Site <<<
+\>>> Start Publishing on This Site <<<
 
 @ **2023-12-10**
 Writing Start: *Python*
@@ -65,5 +65,8 @@ Writing Start: *Data Science*
 
 @ **2024-11-13**
 Writing Start: *Operating System*
+
+@ **2025-02-03**
+Writing Start: *Natural Language Processing(cs224n)*
 
 and... **Actively Being Updated!!**

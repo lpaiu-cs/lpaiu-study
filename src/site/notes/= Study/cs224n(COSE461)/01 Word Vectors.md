@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/= Study/cs224n(COSE461)/01 Word Vectors/","created":"2025-03-13T21:14:27.138+09:00","updated":"2025-04-02T19:33:28.838+09:00"}
+{"dg-publish":true,"permalink":"/= Study/cs224n(COSE461)/01 Word Vectors/","created":"2025-03-13T21:14:27.138+09:00","updated":"2025-04-04T09:08:17.870+09:00"}
 ---
 
 Lecture 1: Introduction and Word Vectors
@@ -58,7 +58,7 @@ Skip-gram은 Word2vec 기법 중 하나로, 주어진 중심단어(center word)�
 결국 우리는 더 정확한 $P(w_{t+j} \mid w_t)$를 알고 싶은 것이다.
 
 그렇기 위해서는 파라미터를 최대한 정확하게 구해야 한다.
-이때 파라미터 학습은 [[= Study/Deep Learning/경사하강법Gradient Descent\|경사하강법Gradient Descent]]을 이용한다.
+이때 파라미터 학습은 [[= Study/Deep Learning/Gradient Descent\|Gradient Descent]]을 이용한다.
 
 ## Gradient Descent
 경사하강법을 사용하기 위해서는 우린 예측이 어긋날 경우 비용이 커지게 되는 함수를 정의해줘야 한다.

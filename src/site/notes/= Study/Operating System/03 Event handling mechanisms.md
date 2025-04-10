@@ -1,9 +1,7 @@
 ---
-{"dg-publish":true,"permalink":"/= Study/Operating System/03 Event handling mechanisms/","created":"2024-11-13T20:15:40.000+09:00","updated":"2025-04-10T22:01:43.516+09:00"}
+{"dg-publish":true,"permalink":"/= Study/Operating System/03 Event handling mechanisms/","created":"2024-11-13T20:15:40.000+09:00","updated":"2025-04-10T22:19:22.335+09:00"}
 ---
 
-이전 글: [[= Study/Operating System/02 OS structure\|02 OS structure]]
-다음 글: [[= Study/Operating System/04 System Call 함수 정의하기\|04 System Call 함수 정의하기]]
 
 앞서나온 전제로, CPU가 하나일때에 대해 생각해보자.
 CPU에서 작동해야 하는 여러 프로그램들은 어떻게 서로에게 CPU 리소스 자리를 내어주고 가져갈까?
@@ -18,7 +16,7 @@ CPU에서 작동해야 하는 여러 프로그램들은 어떻게 서로에게 
 >Context Switching: CPU가 A라는 프로세스를 중단하고 B 프로세스를 실행할 때, 레지스터, 스택 포인터, 프로그램 카운터 등 전체적인 프로세스의 실행 상태를 저장/복원하는 작업.
 
 
-
-
-
+---
+이전 글: [[= Study/Operating System/02 OS structure\|02 OS structure]]
+다음 글: [[= Study/Operating System/04 System Call 함수 정의하기\|04 System Call 함수 정의하기]]
 

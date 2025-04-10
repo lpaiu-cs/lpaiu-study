@@ -1,9 +1,7 @@
 ---
-{"dg-publish":true,"permalink":"/= Study/Operating System/02 OS structure/","created":"2024-11-13T20:15:32.000+09:00","updated":"2025-04-10T22:01:16.173+09:00"}
+{"dg-publish":true,"permalink":"/= Study/Operating System/02 OS structure/","created":"2024-11-13T20:15:32.000+09:00","updated":"2025-04-10T22:04:50.212+09:00"}
 ---
 
-이전 글: [[= Study/Operating System/01 Operating System Intro\|01 Operating System Intro]]
-다음 글: [[= Study/Operating System/03 Event handling mechanisms\|03 Event handling mechanisms]]
 # Design OS
 운영체제를 디자인 하기 위해 고려해야 할 목표는 여러가지가 있다.
 >Fairness, Real-time, High performance(higher throughput, low latency, high utilization), Scalability, Stability/reliability/robustness, Security/integrity, Usability, Compatibility, Energy consumption(power, heat), etc.
@@ -69,6 +67,9 @@ CPU는 하나 이상의 실행 모드를 갖는데, 그것은 시스템을 보�
 
 ![Screenshot 2025-04-10 at 9.06.44 PM.png](/img/user/z-Attached%20Files/Screenshot%202025-04-10%20at%209.06.44%20PM.png)
 
+---
+이전 글: [[= Study/Operating System/01 Operating System Intro\|01 Operating System Intro]]
+다음 글: [[= Study/Operating System/03 Event handling mechanisms\|03 Event handling mechanisms]]
 
 #
 Monlithic kernel vs Microkernel

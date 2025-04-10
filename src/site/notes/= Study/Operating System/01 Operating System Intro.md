@@ -1,8 +1,7 @@
 ---
-{"dg-publish":true,"permalink":"/= Study/Operating System/01 Operating System Intro/","created":"2024-11-13T20:14:00.000+09:00","updated":"2025-04-10T22:01:03.419+09:00"}
+{"dg-publish":true,"permalink":"/= Study/Operating System/01 Operating System Intro/","created":"2024-11-13T20:14:00.000+09:00","updated":"2025-04-10T22:04:41.160+09:00"}
 ---
 
-다음 글: [[= Study/Operating System/02 OS structure\|02 OS structure]]
 # Operating System
 
 >An **operating system** (**OS**) is system software that manages computer hardware and software resources, and provides common services for computer programs. - wikipedia에서 발췌
@@ -40,6 +39,5 @@ OS가 필요한 이유는 간단하다. 하드웨어 종류가 너무 많고 복
 정책은 추상적인 규칙이고, 그 규칙을 정확히 어떤 방식으로 구현하는 지는 메커니즘이라고 부른다.
 
 
-
-
-
+---
+다음 글: [[= Study/Operating System/02 OS structure\|02 OS structure]]

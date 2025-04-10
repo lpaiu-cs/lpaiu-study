@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/= Study/Operating System/03 Event handling mechanisms/","created":"2024-11-13T20:15:40.000+09:00","updated":"2025-04-10T22:56:13.281+09:00"}
+{"dg-publish":true,"permalink":"/= Study/Operating System/03 Event handling mechanisms/","created":"2024-11-13T20:15:40.000+09:00","updated":"2025-04-10T22:57:00.598+09:00"}
 ---
 
 
@@ -27,9 +27,8 @@ CPU에서 작동해야 하는 여러 프로그램들은 어떻게 서로에게 
 >1. **Trap** (synchronous event): 현재 실행 중인 프로세스의 명령 실행 결과로 발생하는 이벤트
 >2. **Interrupt** (asynchronous event): 현재 실행 중인 프로세스와 무관하게 다른 장치 또는 외부에 의해 발생하는 이벤트
 
-예컨대, 내가 코드를 잘못 짜서 divide by zero 이벤트가 발생하여 프로세스가 중지되었다 치자, 이것은 트랩이 발생했다고 할 수 있다.
-
 ## Trap processing
+내가 코드를 잘못 짜서 divide by zero 이벤트가 발생하여 프로세스가 중지되었다 치자, 이것은 트랩이 발생했다고 할 수 있다.
 
 ![Screenshot 2025-04-10 at 10.37.03 PM.png](/img/user/z-Attached%20Files/Screenshot%202025-04-10%20at%2010.37.03%20PM.png)
 

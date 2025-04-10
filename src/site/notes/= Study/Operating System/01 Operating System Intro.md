@@ -1,7 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/= Study/Operating System/01 Operating System Intro/","created":"2024-11-13T20:14:00.000+09:00","updated":"2025-04-10T20:05:53.963+09:00"}
+{"dg-publish":true,"permalink":"/= Study/Operating System/01 Operating System Intro/","created":"2024-11-13T20:14:00.000+09:00","updated":"2025-04-10T22:01:03.419+09:00"}
 ---
 
+다음 글: [[= Study/Operating System/02 OS structure\|02 OS structure]]
 # Operating System
 
 >An **operating system** (**OS**) is system software that manages computer hardware and software resources, and provides common services for computer programs. - wikipedia에서 발췌

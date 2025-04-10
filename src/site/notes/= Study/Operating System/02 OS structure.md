@@ -1,7 +1,9 @@
 ---
-{"dg-publish":true,"permalink":"/= Study/Operating System/02 OS structure/","created":"2024-11-13T20:15:32.000+09:00","updated":"2025-04-10T21:17:41.708+09:00"}
+{"dg-publish":true,"permalink":"/= Study/Operating System/02 OS structure/","created":"2024-11-13T20:15:32.000+09:00","updated":"2025-04-10T22:01:16.173+09:00"}
 ---
 
+이전 글: [[= Study/Operating System/01 Operating System Intro\|01 Operating System Intro]]
+다음 글: [[= Study/Operating System/03 Event handling mechanisms\|03 Event handling mechanisms]]
 # Design OS
 운영체제를 디자인 하기 위해 고려해야 할 목표는 여러가지가 있다.
 >Fairness, Real-time, High performance(higher throughput, low latency, high utilization), Scalability, Stability/reliability/robustness, Security/integrity, Usability, Compatibility, Energy consumption(power, heat), etc.

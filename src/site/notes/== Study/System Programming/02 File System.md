@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/== Study/System Programming/02 File System/","created":"2025-04-12T22:01:25.361+09:00","updated":"2025-04-15T14:02:10.671+09:00"}
+{"dg-publish":true,"permalink":"/== Study/System Programming/02 File System/","created":"2025-04-12T22:01:25.361+09:00","updated":"2025-04-15T16:11:27.790+09:00"}
 ---
 
 # File Abstraction
@@ -98,4 +98,4 @@ $$\begin{flalign*}
 
 ---
 이전글: [[== Study/System Programming/01 IO Device\|01 IO Device]]
-다음글: 
+다음글: [[== Study/System Programming/03 File and Directory in Disks\|03 File and Directory in Disks]]

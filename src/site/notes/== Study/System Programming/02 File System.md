@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/== Study/System Programming/02 File System/","created":"2025-04-12T22:01:25.361+09:00","updated":"2025-04-15T16:11:27.790+09:00"}
+{"dg-publish":true,"permalink":"/== Study/System Programming/02 File System/","created":"2025-04-12T22:01:25.361+09:00","updated":"2025-04-15T19:57:38.260+09:00"}
 ---
 
 # File Abstraction
@@ -97,5 +97,5 @@ $$\begin{flalign*}
 ![Screenshot 2025-04-15 at 1.52.14 PM.png](/img/user/z-Attached%20Files/Screenshot%202025-04-15%20at%201.52.14%20PM.png)
 
 ---
-이전글: [[== Study/System Programming/01 IO Device\|01 IO Device]]
+이전글: [[== Study/System Programming/01 IO Systems\|01 IO Systems]]
 다음글: [[== Study/System Programming/03 File and Directory in Disks\|03 File and Directory in Disks]]

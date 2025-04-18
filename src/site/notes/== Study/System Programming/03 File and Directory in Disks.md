@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/== Study/System Programming/03 File and Directory in Disks/","created":"2025-04-15T11:36:21.051+09:00","updated":"2025-04-15T16:10:34.795+09:00"}
+{"dg-publish":true,"permalink":"/== Study/System Programming/03 File and Directory in Disks/","created":"2025-04-15T11:36:21.051+09:00","updated":"2025-04-19T01:06:23.859+09:00"}
 ---
 
 # How the File and Directory exists "on Disk"
@@ -56,3 +56,38 @@ random access의 속도 향상
 
 ![Screenshot 2025-04-15 at 3.59.22 PM.png](/img/user/z-Attached%20Files/Screenshot%202025-04-15%20at%203.59.22%20PM.png)
 
+# Directory Implementation
+
+디렉토리 또한 FCB를 갖는다.
+디렉토리 내부 엔트리 들은 어떤 방식으로 존재할까?
+앞서 파일이 디스크 내부에 어떤 방식으로 존재할 수 있는지 다양한 방법을 배웠듯,
+디렉토리 내부 엔트리들도 다양한 구조로 연결된다.
+(1) linked list
+-> 이미 잘 알듯이 특정한 파일 접근에 오래 걸린다. O(n)
+(2) hash table
+-> 해시 테이블은 O(1) 접근 시간으로 매우 빠르게 접근할 수 있다.
+세부적으로, 파일 이름을 통해 해시를 만들고, 해시 충돌은 부분적으로 linked list를 이용한다.
+-> 하지만 파일간 정렬이 되어있지 않아, 별도의 sort를 해야 한다.
+(3) tree
+-> B-tree 구조를 이용하므로, 자동 정렬된다. 트리구조 이므로 접근시간도 짧다.
+
+# Directory Entry
+앞서 파일 이름이 디렉토리 엔트리를 가리킨다 했는데, 엄밀히 말하면, 엔트리에 포함되는 개념이다.
+inode-based 파일 시스템에서의 디렉토리 엔트리 구성은 다음 그림과 같이 inode table에 매핑되는 inode number와 파일 이름으로 구성된다.
+
+![Screenshot 2025-04-19 at 12.42.40 AM.png](/img/user/z-Attached%20Files/Screenshot%202025-04-19%20at%2012.42.40%20AM.png)
+
+하지만, 초창기에 등장한 MS DOS는 inode개념이 완전히 정립되지 않았기 때문에 디렉토리 **엔트리와 FCB가 분리되어 있지 않다.** (Linux에서 FCB가 inode를 가리키는 것과 달리)
+그것이 아래의 FAT 그림이다.
+
+![Pasted image 20250419004544.png](/img/user/z-Attached%20Files/Pasted%20image%2020250419004544.png)
+
+# inode-based file systems flow
+지금까지 배운 것을 토대로 inode-based에서 파일에 접근하는 흐름을 한번 살펴보자.
+
+1. super block: 루트 디렉토리를 찾기 위한 파일 시스템의 메타데이타라고 할 수 있다. (루트의 inode number는 보통 2)
+2. inode table은 array로 구현된다(inode\[2] = 루트의 데이터 블록위치). 데이터 블록에 접근한 다음, 데이터 블록에서 하위 파일/디렉토리 엔트리 정보를 얻음.
+3. 찾고자 하는 디렉토리/파일 이름에 해당하는 inode 번호 알아냄 -> 데이터 블록 접근
+4. ...
+
+![Pasted image 20250419005747.png|500](/img/user/z-Attached%20Files/Pasted%20image%2020250419005747.png)

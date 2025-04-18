@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/== Study/System Programming/02 File System/","created":"2025-04-12T22:01:25.361+09:00","updated":"2025-04-15T19:57:38.260+09:00"}
+{"dg-publish":true,"permalink":"/== Study/System Programming/02 File System/","created":"2025-04-12T22:01:25.361+09:00","updated":"2025-04-19T00:04:53.188+09:00"}
 ---
 
 # File Abstraction
@@ -55,6 +55,7 @@ $$\begin{flalign*}
 
 트리구조의 한계상 특정 디렉토리와 파일이 현재 디렉토리와 먼 경우 번거롭게 돌아가야 하는 경우가 발생한다.
 아래 그림과 같이 다른 디렉토리나 파일에 쉽게 연결될 수 있는 방법은 없을까? (엄밀히 디렉토리 또한 파일이다.)
+
 ![Pasted image 20250415115901.png](/img/user/z-Attached%20Files/Pasted%20image%2020250415115901.png)
 그것이 바로 링킹이다.
 ## Linking

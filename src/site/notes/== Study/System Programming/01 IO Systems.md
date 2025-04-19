@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/== Study/System Programming/01 IO Systems/","created":"2025-04-12T15:15:15.581+09:00","updated":"2025-04-15T14:02:02.616+09:00"}
+{"dg-publish":true,"permalink":"/== Study/System Programming/01 IO Systems/","created":"2025-04-12T15:15:15.581+09:00","updated":"2025-04-20T01:39:29.327+09:00"}
 ---
 
 IO 디바이스는 컴퓨터가 주변과 상호작용할 수 있게 하는 것이다. (커널을 통해서)
@@ -52,7 +52,7 @@ $$\text{CPU} ↔ \text{Virtual Memory} ↔ \text{Physical Memory} ↔ \text{I/O 
 
 ![Screenshot 2025-04-12 at 6.58.05 PM.png](/img/user/z-Attached%20Files/Screenshot%202025-04-12%20at%206.58.05%20PM.png)
 
-과거 32비트에서는 이로인한 RAM 손실 문제가 존재했지만, 64비트 시스템에서는 이런 문제가 발생하지 않는다. 왜냐하면, 64비트의 물리 메모리 공간이 실제 메모리 RAM에 모두 매핑될 수 없기 때문에, 물리 메모리 공간에서 평생 절대 쓰이지 않는 주소들로 매핑하면 되기 때문이다.
+과거 32비트에서는 이로인한 RAM 손실 문제가 존재했지만, 64비트 시스템에서는 이런 문제가 발생하지 않는다. 왜냐하면, 64비트의 물리 메모리 공간이 실제 메모리 RAM에 모두 매핑될 수 없기 때문에, **물리 메모리 공간에서 평생 절대 쓰이지 않는 주소들로 매핑**하면 되기 때문이다.
 
 ---
 다음글: [[== Study/System Programming/02 File System\|02 File System]]

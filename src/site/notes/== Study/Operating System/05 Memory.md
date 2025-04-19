@@ -1,14 +1,15 @@
 ---
-{"dg-publish":true,"permalink":"/== Study/Operating System/05 Memory/","created":"2024-12-09T14:09:40.000+09:00","updated":"2025-04-10T22:02:16.539+09:00"}
+{"dg-publish":true,"permalink":"/== Study/Operating System/05 Memory/","created":"2024-12-09T14:09:40.000+09:00","updated":"2025-04-20T01:29:48.687+09:00"}
 ---
 
 (1) Describe physical memory, virtual memory, and shared memory, respectively
 
-**Physical memory**는  RAM으로, 실질적으로 값이 할당되는 한정된 자원이자, 커널이 직접 관리하는 물리적 공간이다.
+**Physical memory**는  RAM으로, 실질적으로 값이 할당되는 한정된 자원이자, **커널이 직접 관리**하는 물리적 공간이다.
 
 **Virtual memory**는 운영체제가 제공하는 논리적 공간으로, 유저 어플리케이션이 접근할 수 있는 고유하고 독립된 메모리이다. 실존하지는 않지만, 커널이 논리적 공간과 물리적 공간을 매핑함으로써 프로세스가 실존하는 것처럼 느껴지게 만든다.
+각 프로세스는 별도의 VM을 가지며, VM의 일부는 공통된 커널 공간으로 고정 할당된다.
 
-**Shared memory**는 물리적 공간의 일부를 여러 프로세스의 논리적 공간과 one-to-many 매핑하여, 각 프로세스들이 동일한 데이터를 공유하고 접근할 수 있게 한다. 단, 동기화 문제를 해결하기 위한 적절한 메커니즘이 필요하다.
+**Shared memory**는 물리적 공간의 일부를 여러 프로세스의 논리적 공간과 **one-to-many 매핑**하여, 각 프로세스들이 동일한 데이터를 공유하고 접근할 수 있게 한다. 단, 동기화 문제를 해결하기 위한 적절한 메커니즘이 필요하다.
 
 
 (2) Describe the need for virtual memory and shared memory, respectively

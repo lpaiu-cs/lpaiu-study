@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/== Study/System Programming/03 File and Directory in Disks/","created":"2025-04-15T11:36:21.051+09:00","updated":"2025-04-19T01:06:23.859+09:00"}
+{"dg-publish":true,"permalink":"/== Study/System Programming/03 File and Directory in Disks/","created":"2025-04-15T11:36:21.051+09:00","updated":"2025-04-19T19:12:34.324+09:00"}
 ---
 
 # How the File and Directory exists "on Disk"
@@ -82,7 +82,7 @@ inode-based 파일 시스템에서의 디렉토리 엔트리 구성은 다음 �
 
 ![Pasted image 20250419004544.png](/img/user/z-Attached%20Files/Pasted%20image%2020250419004544.png)
 
-# inode-based file systems flow
+# inode-based File Systems Flow
 지금까지 배운 것을 토대로 inode-based에서 파일에 접근하는 흐름을 한번 살펴보자.
 
 1. super block: 루트 디렉토리를 찾기 위한 파일 시스템의 메타데이타라고 할 수 있다. (루트의 inode number는 보통 2)
@@ -91,3 +91,7 @@ inode-based 파일 시스템에서의 디렉토리 엔트리 구성은 다음 �
 4. ...
 
 ![Pasted image 20250419005747.png|500](/img/user/z-Attached%20Files/Pasted%20image%2020250419005747.png)
+
+---
+이전글: [[== Study/System Programming/02 File System\|02 File System]]
+다음글: [[== Study/System Programming/04 In-kernel File System Implementation\|04 In-kernel File System Implementation]]

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/== Study/System Programming/04 In-kernel File System Implementation/","created":"2025-04-19T01:07:12.303+09:00","updated":"2025-04-20T01:40:13.735+09:00"}
+{"dg-publish":true,"permalink":"/== Study/System Programming/04 In-kernel File System Implementation/","created":"2025-04-19T01:07:12.303+09:00","updated":"2025-04-20T09:31:34.939+09:00"}
 ---
 
 # on-disk structures
@@ -24,11 +24,11 @@ Super 블록의 경우 정기적으로(e.g. every 8192 blocks) 복제되어 저�
 
 좀 더 자세히 말하자면, 커널에 존재하는 여러 FS는 모두 공통함수(e.g. read(), write())을 제공해야 한다.
 하지만 실제로 읽고 쓰는 방법은 FS마다 완전히 다르다.
-따라서 같은 이름의 함수에 구현만 바꿔치기한다. (FS 모듈에 따라 동적구현으로 바꿔치기함(바인딩).)
+따라서 어떤 FS인지에 따라 함수가 동적으로 바꿔치기된다.(바인딩)
 
 아래는 계층적(layer)으로 디바이스에 접근하는 루틴을 보여준다.
 ![Screenshot 2025-04-19 at 7.11.38 PM.png](/img/user/z-Attached%20Files/Screenshot%202025-04-19%20at%207.11.38%20PM.png)
-위 그림 마지막에 다양한 IO 디바이스 FAT, ext4, nfs에 따라 추상화된 함수인 read가 구체적인 구현에서 read_fat, read_ext4, read_nfs 등으로 바꿔치기 되는 것을 알 수 있다.
+위 그림 마지막에 다양한 IO 디바이스 FAT, ext4, nfs에 따라 추상화된 함수인 read가 구체적인 구현에서 read_fat, read_ext4, read_nfs 등의 함수로 바꿔치기 되는 것을 알 수 있다.
 
 유저(프로세스)가 디바이스에 접근하는 과정을 나타내면 다음과 같다.
 (1) 유저는 시스템콜 인터페이스를 통해 High-level file system인 VFS로 진입한다.

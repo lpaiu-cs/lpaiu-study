@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/== Study/System Programming/02 File System/","created":"2025-04-12T22:01:25.361+09:00","updated":"2025-04-19T21:29:40.014+09:00"}
+{"dg-publish":true,"permalink":"/== Study/System Programming/02 File System/","created":"2025-04-12T22:01:25.361+09:00","updated":"2025-04-20T16:20:02.000+09:00"}
 ---
 
 # File Abstraction
@@ -60,7 +60,7 @@ $$\begin{flalign*}
 그것이 바로 링킹이다.
 ## Linking
 파일 시스템의 논리적 구조에 대해 조금 더 깊게 들어가보자.
-디렉토리 내부에서 파일이름은 디렉토리 엔트리를 가리킨다. 디렉토리엔트리는 파일 디스크립터를 통해 inode와 매핑되었다. 그리고 inode는 데이터 블록과 매핑된다. 링킹은 파일의 바로가기 같은 것인데, 스토리지 내부 데이터의 위치는 inode에 저장되는 것이 기본 구조이므로 data와 바로 연결되는건 아니다. 대신 나머지 두개인, 디렉토리 엔트리와 inode 이 둘 중 누구와 연결시키냐에 따라 전자는 Soft link, 후자는 Hard link로 나뉜다. 아래 도식도를 보면 이해가 쉽다.
+디렉토리 내부에서 파일이름은 디렉토리 엔트리를 가리킨다. 디렉토리 엔트리는 파일 디스크립터를 통해 inode와 매핑되었다. 그리고 inode는 데이터 블록과 매핑된다. 링킹은 파일의 바로가기 같은 것인데, 스토리지 내부 데이터의 위치는 inode에 저장되는 것이 기본 구조이므로 data와 바로 연결되는건 아니다. 대신 나머지 두개인, 디렉토리 엔트리와 inode 이 둘 중 누구와 연결시키냐에 따라 전자는 Soft link, 후자는 Hard link로 나뉜다. 아래 도식도를 보면 이해가 쉽다.
 
 ![Screenshot 2025-04-14 at 10.58.02 PM.png](/img/user/z-Attached%20Files/Screenshot%202025-04-14%20at%2010.58.02%20PM.png)
 

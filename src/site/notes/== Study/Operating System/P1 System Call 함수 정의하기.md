@@ -1,12 +1,12 @@
 ---
-{"dg-publish":true,"permalink":"/== Study/Operating System/P1 System Call 함수 정의하기/","created":"2024-11-13T21:22:22.000+09:00","updated":"2025-04-14T15:40:14.994+09:00"}
+{"dg-publish":true,"permalink":"/== Study/Operating System/P1 System Call 함수 정의하기/","created":"2024-11-13T21:22:22.000+09:00","updated":"2025-04-20T16:30:52.000+09:00"}
 ---
 
 시스템 콜을 통해서만 커널에 접근할 수 있다.
 그렇다면, 시스템 콜은 어떻게 이뤄지는 것일까?
 
 먼저, 커널에는 시스템 콜 함수가 정의되어 있다.
-[[== Study/Operating System/Project 1\|Project 1]]에서 우리는 시스템 콜 함수를 추가하고, 이를 호출하는 일을 했었다.
+[[== Study/Operating System/Project 1\|== Study/Operating System/Project 1]]에서 우리는 시스템 콜 함수를 추가하고, 이를 호출하는 일을 했었다.
 
 여기에는 크게 3가지 일이 필요하다.
 

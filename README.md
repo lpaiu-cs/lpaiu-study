@@ -1,9 +1,6 @@
-# Digital Obsidian Garden
-This is the template to be used together with the [Digital Garden Obsidian Plugin](https://github.com/oleeskild/Obsidian-Digital-Garden). 
-See the README in the plugin repo for information on how to set it up.
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/oleeskild/digitalgarden)
+# lpaiu-cs의 study vault
+lpaiu의 Obsidian 기반 스터디 볼트입니다.
 
 ---
-## Docs
-Docs are available at [dg-docs.ole.dev](https://dg-docs.ole.dev/)
+## github pages에 퍼블리싱됩니다.
+[lpaiu-study](https://lpaiu-cs.github.io/lpaiu-study/)

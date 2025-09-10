@@ -573,5 +573,6 @@ module.exports = function (eleventyConfig) {
     htmlTemplateEngine: "njk",
     markdownTemplateEngine: false,
     passthroughFileCopy: true,
+    pathPrefix: process.env.PATH_PREFIX || "/"
   };
 };

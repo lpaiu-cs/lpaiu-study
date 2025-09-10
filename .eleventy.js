@@ -20,7 +20,7 @@ function transformImage(src, cls, alt, sizes, widths = ["500", "700", "auto"]) {
     widths: widths,
     formats: ["webp", "jpeg"],
     outputDir: "./_site/img/optimized",
-    urlPath: "/img/optimized",
+    urlPath: (process.env.PATH_PREFIX || "") + "/img/optimized",
   };
 
   // generate images, while this is async we don’t wait
@@ -87,7 +87,7 @@ function getAnchorAttributes(filePath, linkTitle) {
       "class": "internal-link",
       "target": "",
       "data-note-icon": noteIcon,
-      "href": `${permalink}${headerLinkPath}`,
+      "href": `${PREFIX}${permalink}${headerLinkPath}`,
     },
     innerHTML: title,
   }

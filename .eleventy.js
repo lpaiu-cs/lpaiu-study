@@ -45,7 +45,9 @@ function getAnchorAttributes(filePath, linkTitle) {
 
   let noteIcon = process.env.NOTE_ICON_DEFAULT;
   const title = linkTitle ? linkTitle : fileName;
-  let permalink = `/notes/${slugify(filePath)}`;
+  let cleaned = fileName.endsWith(".md" ? fileName.slice(0, -3) : fileName; // 확장자 제거
+  cleaned = cleaned.replaceAll(" ", "-"); // 공백만 하이픈 처리, 슬래시는 보존
+  let permalink = `/notes/${cleaned}`;
   let deadLink = false;
   try {
     const startPath = "./src/site/notes/";

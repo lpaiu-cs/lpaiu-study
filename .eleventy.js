@@ -19,7 +19,7 @@ function transformImage(src, cls, alt, sizes, widths = ["500", "700", "auto"]) {
   let options = {
     widths: widths,
     formats: ["webp", "jpeg"],
-    outputDir: "./dist/img/optimized",
+    outputDir: "./_site/img/optimized",
     urlPath: "/img/optimized",
   };
 
@@ -524,7 +524,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/site/img");
   eleventyConfig.addPassthroughCopy("src/site/scripts");
   eleventyConfig.addPassthroughCopy("src/site/styles/_theme.*.css");
-  eleventyConfig.addPlugin(faviconsPlugin, { outputDir: "dist" });
+  eleventyConfig.addPlugin(faviconsPlugin, { outputDir: "_site" });
   eleventyConfig.addPlugin(tocPlugin, {
     ul: true,
     tags: ["h1", "h2", "h3", "h4", "h5", "h6"],
@@ -564,7 +564,7 @@ module.exports = function (eleventyConfig) {
   return {
     dir: {
       input: "src/site",
-      output: "dist",
+      output: "_site",
       data: `_data`,
     },
     templateFormats: ["njk", "md", "11ty.js"],

@@ -14,6 +14,6 @@
 뿐만아니라 특수한 상황(예컨대 최대 자릿수를 아는 경우)에는 [[== Study/Algorithm/Radix Sort\|Radix Sort]]를 사용해 O(n)만에 정렬할 수도 있다.
 
 >분할정복에 포함된 sort
->- [[== Study/Algorithm/Merge Sort.\|Merge Sort.]]
->- [[== Study/Algorithm/Quick Sort.\|Quick Sort.]]
+>- [[Merge Sort.\|Merge Sort.]]
+>- [[Quick Sort.\|Quick Sort.]]
 

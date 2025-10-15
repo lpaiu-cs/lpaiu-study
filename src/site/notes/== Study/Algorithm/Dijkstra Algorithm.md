@@ -13,4 +13,4 @@ Minimum Spanning Tree 문제와는 달리, **경로**를 가진다. 즉, 단순�
 후보(임시)들을 선정하고, 그 중 가장 싼놈과 연결(확정)하는 것을 반복하는 것이다.
 
 # 한계
-가중치가 음수인 경우가 존재하면 최적해를 보장하지 못한다. 이를 해결하기 위해서는 [[== Study/Algorithm/Bellman-Ford Algorithm.\|Bellman-Ford Algorithm.]]을 사용해야 한다.
+가중치가 음수인 경우가 존재하면 최적해를 보장하지 못한다. 이를 해결하기 위해서는 [[Bellman-Ford Algorithm.\|Bellman-Ford Algorithm.]]을 사용해야 한다.

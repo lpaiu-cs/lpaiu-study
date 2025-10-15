@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/== Study/Operating System/02 OS structure/","created":"2024-11-13T20:15:32.000+09:00","updated":"2025-04-11T00:33:10.000+09:00"}
+{"dg-publish":true,"permalink":"/== Study/Operating System/02 OS structure/","created":"2024-11-13T20:15:32.000+09:00","updated":"2025-04-11T00:33:10.208+09:00"}
 ---
 
 # Design OS

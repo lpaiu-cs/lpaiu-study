@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/== Study/Operating System/01 Operating System Intro/","created":"2024-11-13T20:14:00.000+09:00","updated":"2025-04-10T22:04:41.160+09:00"}
+{"dg-publish":true,"permalink":"/== Study/Operating System/01 Operating System Intro/","created":"2024-11-13T20:14:00.000+09:00","updated":"2025-04-10T22:04:41.000+09:00"}
 ---
 
 # Operating System

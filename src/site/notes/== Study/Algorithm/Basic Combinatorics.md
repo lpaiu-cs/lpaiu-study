@@ -7,7 +7,7 @@
 ## 집합 분할 문제
 집합을 몇개의 그룹으로 분할하는 경우의 수를 어떻게 구할 수 있을까?
 
-[[== Study/Algorithm/Dynamic Programming.\|Dynamic Programming.]]을 이용하면, 간단하다.
+[[Dynamic Programming.\|Dynamic Programming.]]을 이용하면, 간단하다.
 집합의 원소가 a, b, c, d, e, f, g, h, i, j 로 총 10개라 하자.
 이들 *원소 10개를 4개의 그룹으로 분할하는 경우의 수*를 구하라는 문제는
 *a 제외 9개의 문자를 네 그룹으로 나누고, a를 배치하는 경우의 수* + *a 제외 9개의 문자를 세 그룹으로 나누고 a 홀로 그룹이 되는 경우의 수*를 구하라는 문제와 **동치**이다.
@@ -25,7 +25,7 @@ $S(10, 4) = S(9, 4) \times 4 + S(9, 3)$ 이 된다.
 >먼저, 카탈란 수에 대해 알아보자.
 >$C_0 = 1$일 때, n번째 카탈란 수 $C_n$은 아래와 같은 점화식으로써 정의된다.
 >$C_n = C_0 C_{n-1} + C_1 C_{n-2} + C_2 C_{n-3} + \dots + C_{n-3} C_2 + C_{n-2} C_1 + C_{n-1} C_0$
->식의 재귀적 꼴만 봐도, 이 또한 [[== Study/Algorithm/Dynamic Programming.\|Dynamic Programming.]]과 관계된다는 것을 느낄 수 있다.
+>식의 재귀적 꼴만 봐도, 이 또한 [[Dynamic Programming.\|Dynamic Programming.]]과 관계된다는 것을 느낄 수 있다.
 
 n각형의 변은 n개이다. 그중 한 변 $\overline{S_1S_n}$을 포함하는 삼각형의 또 다른 한 점을 X라 하자.
 $X = S_2 \text{ 일 때, (분할의 경우의 수)} = (1) \times \text{(n-1각형 분할의 경우의 수)}$

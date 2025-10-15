@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/== Study/System Programming/01 IO Systems/","created":"2025-04-12T15:15:15.581+09:00","updated":"2025-04-20T01:39:29.327+09:00"}
+{"dg-publish":true,"permalink":"/== Study/System Programming/01 IO Systems/","created":"2025-04-12T15:15:15.000+09:00","updated":"2025-04-20T01:39:29.000+09:00"}
 ---
 
 IO 디바이스는 컴퓨터가 주변과 상호작용할 수 있게 하는 것이다. (커널을 통해서)

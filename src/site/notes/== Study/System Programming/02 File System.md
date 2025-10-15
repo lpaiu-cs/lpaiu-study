@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/== Study/System Programming/02 File System/","created":"2025-04-12T22:01:25.361+09:00","updated":"2025-04-20T16:20:02.000+09:00"}
+{"dg-publish":true,"permalink":"/== Study/System Programming/02 File System/","created":"2025-04-12T22:01:25.000+09:00","updated":"2025-04-20T16:20:02.488+09:00"}
 ---
 
 # File Abstraction

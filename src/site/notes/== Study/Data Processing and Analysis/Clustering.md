@@ -6,7 +6,7 @@
 군집화
 
 # Topic Modeling
-토픽 모델링은 군집화를 통해 분포를 확인하며 [[== Study/Algorithm/Machine Learning Algorithm.#k-NN에 대한 기하학적 접근\|k-NN]]과 마찬가지로 비지도 기계학습에 속한다.
+토픽 모델링은 군집화를 통해 분포를 확인하며 [[Machine Learning Algorithm.#k-NN에 대한 기하학적 접근\|k-NN]]과 마찬가지로 비지도 기계학습에 속한다.
 
 ### 모델의 역할
 - input:

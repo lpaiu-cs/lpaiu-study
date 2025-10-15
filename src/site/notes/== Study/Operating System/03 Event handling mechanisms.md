@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/== Study/Operating System/03 Event handling mechanisms/","created":"2024-11-13T20:15:40.000+09:00","updated":"2025-04-11T21:56:57.803+09:00"}
+{"dg-publish":true,"permalink":"/== Study/Operating System/03 Event handling mechanisms/","created":"2024-11-13T20:15:40.000+09:00","updated":"2025-04-11T21:56:57.000+09:00"}
 ---
 
 

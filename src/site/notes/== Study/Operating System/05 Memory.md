@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/== Study/Operating System/05 Memory/","created":"2024-12-09T14:09:40.000+09:00","updated":"2025-04-20T01:29:48.687+09:00"}
+{"dg-publish":true,"permalink":"/== Study/Operating System/05 Memory/","created":"2024-12-09T14:09:40.000+09:00","updated":"2025-04-20T01:29:48.000+09:00"}
 ---
 
 (1) Describe physical memory, virtual memory, and shared memory, respectively

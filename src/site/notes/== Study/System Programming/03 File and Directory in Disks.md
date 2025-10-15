@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/== Study/System Programming/03 File and Directory in Disks/","created":"2025-04-15T11:36:21.051+09:00","updated":"2025-04-19T19:12:34.324+09:00"}
+{"dg-publish":true,"permalink":"/== Study/System Programming/03 File and Directory in Disks/","created":"2025-04-15T11:36:21.000+09:00","updated":"2025-04-19T19:12:34.000+09:00"}
 ---
 
 # How the File and Directory exists "on Disk"

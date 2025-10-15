@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/== Study/Operating System/P1 System Call 함수 정의하기/","created":"2024-11-13T21:22:22.000+09:00","updated":"2025-04-20T16:30:52.000+09:00"}
+{"dg-publish":true,"permalink":"/== Study/Operating System/P1 System Call 함수 정의하기/","created":"2024-11-13T21:22:22.000+09:00","updated":"2025-04-20T16:30:52.286+09:00"}
 ---
 
 시스템 콜을 통해서만 커널에 접근할 수 있다.

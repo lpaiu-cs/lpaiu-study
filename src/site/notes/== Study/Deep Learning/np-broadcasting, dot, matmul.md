@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/== Study/Deep Learning/np-broadcasting, dot, matmul/","created":"2024-11-15T15:47:26.000+09:00","updated":"2025-03-24T20:06:16.688+09:00"}
+{"dg-publish":true,"permalink":"/== Study/Deep Learning/np-broadcasting, dot, matmul/","created":"2024-11-15T15:47:26.000+09:00","updated":"2025-03-24T20:06:16.000+09:00"}
 ---
 
 numpy array를 통해 매트릭스 및 텐서 연산을 할때, 연산의 규칙이 꽤나 복잡하다.

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/== Study/cs224n(COSE461)/02 GloVe/","created":"2025-03-18T12:21:20.891+09:00","updated":"2025-04-04T00:36:20.745+09:00"}
+{"dg-publish":true,"permalink":"/== Study/cs224n(COSE461)/02 GloVe/","created":"2025-03-18T12:21:20.000+09:00","updated":"2025-04-04T00:36:20.000+09:00"}
 ---
 
 Lecture 2: Word Vectors, Word Senses, and Neural Network Classifiers

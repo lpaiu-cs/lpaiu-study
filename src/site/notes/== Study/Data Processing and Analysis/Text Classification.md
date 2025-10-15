@@ -21,7 +21,7 @@
 > Output:
 > - a predicted class $c \in C$
 
-# Classification Methods: [[== Study/Algorithm/Machine Learning Algorithm.\|Supervised Machine Learning]]
+# Classification Methods: [[Machine Learning Algorithm.\|Supervised Machine Learning]]
 
 - NaÏve Bayes
 - Logistic regression

@@ -36,7 +36,7 @@ ex) DES, 3DES, AES
 ### 비대칭키(=공개키)
 암호화 키 $\ne$ 복호화 키
 발신자와 수신자가 사전에 키를 공유했어야함.
--> 그리고 [[== Study/Algorithm/Encryption Algorithm.\|RSA]]가 등장했다. >중간자 공격에 취약 > 인증서로 보완 可
+-> 그리고 [[Encryption Algorithm.\|RSA]]가 등장했다. >중간자 공격에 취약 > 인증서로 보완 可
 
 ### PKI (Public Key Infrastructure)
 인증서

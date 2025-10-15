@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/== Study/cs224n(COSE461)/01 Word Vectors/","created":"2025-03-13T21:14:27.138+09:00","updated":"2025-04-04T09:08:17.870+09:00"}
+{"dg-publish":true,"permalink":"/== Study/cs224n(COSE461)/01 Word Vectors/","created":"2025-03-13T21:14:27.000+09:00","updated":"2025-04-04T09:08:17.000+09:00"}
 ---
 
 Lecture 1: Introduction and Word Vectors
